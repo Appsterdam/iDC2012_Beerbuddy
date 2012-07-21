@@ -3,10 +3,10 @@ package models;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.NoResultException;
 import javax.persistence.NonUniqueResultException;
 import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
@@ -31,8 +31,8 @@ public class User {
 	@JsonProperty("last_name")
 	public String lastName;
 
-	@OneToOne(optional=true, cascade=CascadeType.ALL)
-	@PrimaryKeyJoinColumn
+	@OneToOne(optional=true, cascade=CascadeType.MERGE)
+	@JoinColumn(name="location_id")
 	public Location location;
 
 	@JsonIgnore
@@ -53,6 +53,10 @@ public class User {
 	}
 
 	public static User findFriend(Long id) {
+		return JPA.em().find(User.class, id);
+	}
+
+	public static User findById(Long id) {
 		return JPA.em().find(User.class, id);
 	}
 }

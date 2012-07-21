@@ -7,9 +7,6 @@ import javax.persistence.IdClass;
 import javax.persistence.Entity;
 import javax.persistence.NoResultException;
 import javax.persistence.NonUniqueResultException;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
 
 import play.db.jpa.JPA;
 
@@ -32,6 +29,7 @@ public class Friend {
 		    query.where(cb.equal(friend.get("user_id1"), user.id));
 		    return JPA.em().createQuery(query).getResultList();
 		    */
+			@SuppressWarnings("unchecked")
 			List<Friend> friends = (List<Friend>)JPA.em()
 	                .createQuery("from Friend f where f.user_id1=?")
 	                .setParameter(1, user.id)
@@ -67,6 +65,9 @@ public class Friend {
 		}
 	}
 
+	/**
+	@TODO: delete relationship for existing user
+	*/
 	public static void saveRelationship(User user1, User user2) {
 		Friend relationship = Friend.findFriendship(user1.id, user2.id);
 		if (relationship == null) {

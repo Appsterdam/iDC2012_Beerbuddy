@@ -34,7 +34,7 @@ public class Location {
 	public Double lat;
 	public Double lon;
 
-	public static Location findByUserId(User user) {
+	public static Location findByUser(User user) {
 		try {
 			CriteriaBuilder cb = JPA.em().getCriteriaBuilder();
 			CriteriaQuery<Location> query = cb.createQuery(Location.class);
@@ -49,7 +49,7 @@ public class Location {
 	}
 	
 	public static Location updateLocation(User user, Double lat, Double lon) {
-		Location location = Location.findByUserId(user);
+		Location location = Location.findByUser(user);
 		if (location != null) {
 			location.lat = lat;
 			location.lon = lon;

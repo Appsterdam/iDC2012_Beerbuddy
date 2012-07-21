@@ -36,17 +36,18 @@ public class Application extends Controller {
 			Later<FbUser> me = batcher.graph("me", FbUser.class);
 			Logger.info(me.get().name);
 
-			// save the user
-			user = new User();
-			user.id = me.get().id;
+			user = User.findById(me.get().id);
+			if (user == null) {
+				// save the user
+				user = new User();
+				user.id = me.get().id;
+			}
+			
 			user.accessToken = accessToken;
 			user.firstName = me.get().firstName;
 			user.lastName = me.get().lastName;
 			user.location = null;
 			user.active = 1;
-			Logger.info("create user: " + user.id);
-			Logger.info(user.firstName);
-			Logger.info(user.lastName);
 			JPA.em().persist(user);
 		}
 
@@ -55,21 +56,20 @@ public class Application extends Controller {
 						+ "(SELECT uid2 FROM friend WHERE uid1 = " + user.id
 						+ ")", FbUser.class);
 
-		List<User> beerBuddies = new ArrayList<User>();
+		List<JsonUser> beerBuddies = new ArrayList<JsonUser>();
 		for (int i = 0; i < myFriends.get().size(); i++) {
 			FbUser fbUser = myFriends.get().get(i);
 			User friend = User.findFriend(fbUser.uid);
 			if (friend != null) {
 				if (friend.active == 1) {
-					beerBuddies.add(friend);
-					Logger.info("Friend found: " + friend.firstName + " " + friend.lastName);
+					beerBuddies.add(new JsonUser(friend));
 				}
 				
 				Friend.saveRelationship(user, friend);
 			}
 		}
 
-		return ok(toJson(new Friends(beerBuddies)));
+		return ok(toJson(new JsonFriends(beerBuddies)));
 	}
 
 	@Transactional
@@ -88,31 +88,40 @@ public class Application extends Controller {
 	public static Result location(String accessToken, String lat, String lon) {
 		User user = User.findByAccessToken(accessToken);
 		if (user != null) {
-			Location.updateLocation(user, Double.valueOf(lat), Double.valueOf(lon));
+			Location loc = Location.updateLocation(user, Double.valueOf(lat), Double.valueOf(lon));
+			user.location = loc;
 			JPA.em().persist(user);
 			
 			List<Friend> friends = Friend.findAllFriends(user);
-			List<User> beerBuddies = new ArrayList<User>();
+			List<JsonUser> beerBuddies = new ArrayList<JsonUser>();
 			for (Friend friend : friends) {
 				User frienUser = User.findFriend(friend.user_id2);
 				if (friend != null && frienUser.active == 1) {
-					beerBuddies.add(frienUser);
-					Logger.info("Friend found: " + frienUser.firstName + " " + frienUser.lastName);
+					beerBuddies.add(new JsonUser(frienUser));
 				}
 			}
 			
-			return ok(toJson(new Friends(beerBuddies)));
+			return ok(toJson(new JsonFriends(beerBuddies)));
 		}
 		
 		return badRequest(toJson("Access denied"));
 	}
 	
-	private static class Friends {
-		Friends(List<User> beerBuddies) {
+	private static class JsonFriends {
+		JsonFriends(List<JsonUser> beerBuddies) {
 			this.beerBuddies = beerBuddies;
 		}
 		
 		@JsonProperty("beer_buddies")
-		public List<User> beerBuddies;
+		public List<JsonUser> beerBuddies;
+	}
+
+	private static class JsonUser {
+		JsonUser(User user) {
+			this.user = user;
+		}
+		
+		@SuppressWarnings("unused")
+		public User user;
 	}
 }
