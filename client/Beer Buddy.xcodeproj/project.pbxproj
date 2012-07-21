@@ -17,6 +17,7 @@
 		D3C3704915BAC9F500A0CB27 /* balloon-stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */; };
 		D3C3705815BACCEC00A0CB27 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C3705715BACCEC00A0CB27 /* libfacebook_ios_sdk.a */; };
 		D3C3705E15BAE70F00A0CB27 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3705D15BAE70F00A0CB27 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3C3706115BB0C6300A0CB27 /* Grip.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3706015BB0C6300A0CB27 /* Grip.m */; };
 		D3E4656215BA9CBA000D0BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656115BA9CBA000D0BB3 /* UIKit.framework */; };
 		D3E4656415BA9CBA000D0BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656315BA9CBA000D0BB3 /* Foundation.framework */; };
 		D3E4656615BA9CBA000D0BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656515BA9CBA000D0BB3 /* CoreGraphics.framework */; };
@@ -55,6 +56,8 @@
 		D3C3705715BACCEC00A0CB27 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
 		D3C3705C15BAE70F00A0CB27 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		D3C3705D15BAE70F00A0CB27 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		D3C3705F15BB0C6300A0CB27 /* Grip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grip.h; sourceTree = "<group>"; };
+		D3C3706015BB0C6300A0CB27 /* Grip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grip.m; sourceTree = "<group>"; };
 		D3E4655D15BA9CBA000D0BB3 /* Beer Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E4656115BA9CBA000D0BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3E4656315BA9CBA000D0BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,6 +163,8 @@
 				D3E4657715BA9CBA000D0BB3 /* ViewController.m */,
 				D3C3703F15BAC3E600A0CB27 /* Friend.h */,
 				D3C3704015BAC3E600A0CB27 /* Friend.m */,
+				D3C3705F15BB0C6300A0CB27 /* Grip.h */,
+				D3C3706015BB0C6300A0CB27 /* Grip.m */,
 			);
 			path = "Beer Buddy";
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */,
 				D3C3704115BAC3E600A0CB27 /* Friend.m in Sources */,
 				D3C3705E15BAE70F00A0CB27 /* JSONKit.m in Sources */,
+				D3C3706115BB0C6300A0CB27 /* Grip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

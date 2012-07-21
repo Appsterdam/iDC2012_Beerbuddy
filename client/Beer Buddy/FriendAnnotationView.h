@@ -13,15 +13,17 @@
 @class ViewController;
 
 @interface FriendAnnotationView : MKAnnotationView<UIGestureRecognizerDelegate> {
-    IBOutlet UIView *view;
-    UITapGestureRecognizer *tapGestureRecognizer;
     IBOutlet UIView *extraStuff;
     IBOutlet UILabel *nameLabel;
     IBOutlet UILabel *nearLabel;
+    IBOutlet UIView *view;
+    IBOutlet UIImageView *imageView;
+    
+    UITapGestureRecognizer *tapGestureRecognizer;
+    
     bool folded;
     Friend *friend;
     ViewController *viewController;
-    IBOutlet UIImageView *imageView;
 }
 
 - (id)initWithFriend:(Friend*)friend :(ViewController*)viewController;
