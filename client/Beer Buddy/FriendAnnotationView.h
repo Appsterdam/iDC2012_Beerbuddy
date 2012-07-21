@@ -8,6 +8,9 @@
 
 #import <MapKit/MapKit.h>
 #import "Friend.h"
+#import "ViewController.h"
+@class Friend;
+@class ViewController;
 
 @interface FriendAnnotationView : MKAnnotationView<UIGestureRecognizerDelegate> {
     IBOutlet UIView *view;
@@ -17,8 +20,9 @@
     IBOutlet UILabel *nearLabel;
     bool folded;
     Friend *friend;
+    ViewController *viewController;
 }
 
-- (id)initWithFriend:(Friend*)friend;
-
+- (id)initWithFriend:(Friend*)friend :(ViewController*)viewController;
+- (void) foldin;
 @end

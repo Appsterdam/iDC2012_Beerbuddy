@@ -18,8 +18,10 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="9fZ-2c-suD">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="vds-1o-60o"/>
+                                    <outletCollection property="gestureRecognizers" destination="TFy-ls-BFY" appends="YES" id="NSE-ne-Lgp"/>
                                 </connections>
                             </mapView>
                             <view contentMode="scaleToFill" id="YFZ-Q0-Ff5">
@@ -41,6 +43,12 @@
                         <outlet property="mapview" destination="9fZ-2c-suD" id="Uw2-oS-Uni"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="TFy-ls-BFY">
+                    <connections>
+                        <action selector="handleMapTap:" destination="2" id="awn-gt-c06"/>
+                        <outlet property="delegate" destination="2" id="hq7-0N-6ml"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>

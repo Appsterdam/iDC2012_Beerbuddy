@@ -9,10 +9,18 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "Facebook.h"
+#import "Friend.h"
+
+@class Friend;
+
 @interface ViewController : UIViewController<MKMapViewDelegate, FBSessionDelegate> {
     Facebook *facebook;
     IBOutlet MKMapView *mapview;
     IBOutlet UIView *activityThrobber;
+    NSMutableArray *friends;
+    
 }
+
+- (void)foldinAllAnnotationsExcept:(Friend*)exceptFriend;
 
 @end

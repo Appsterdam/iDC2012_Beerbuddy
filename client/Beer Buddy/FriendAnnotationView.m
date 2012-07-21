@@ -7,17 +7,19 @@
 //
 
 #import "FriendAnnotationView.h"
-
+#import "ViewController.h"
 @implementation FriendAnnotationView
 
 #define FRIENDVIEW_WIDTH 70
 #define FRIENDVIEW_WIDTH_EXPANDED 250
 #define FRIENDVIEW_HEIGHT 70
 
-- (id)initWithFriend:(Friend*)aFriend
+- (id)initWithFriend:(Friend*)aFriend:(ViewController*)aViewController;
 {
     self = [super init];
     self->friend = aFriend;
+    self->viewController = aViewController;
+    friend->view = self;
     
     [[NSBundle mainBundle] loadNibNamed:@"FriendAnnotationView" owner:self options:nil];
     [self addSubview:view];
@@ -50,7 +52,6 @@
     else {
         [self foldin];
     }
-    folded = !folded;
 }
 
 - (void) foldout {
@@ -61,6 +62,8 @@
         extraStuff.alpha = 1.0;
         self.centerOffset = CGPointMake((FRIENDVIEW_WIDTH_EXPANDED-FRIENDVIEW_WIDTH)/2, -FRIENDVIEW_HEIGHT/2);
     }];
+    [viewController foldinAllAnnotationsExcept:friend];
+    folded = NO;
 }
 
 - (void) foldin {
@@ -70,6 +73,7 @@
         extraStuff.alpha = 0.0;
         self.centerOffset = CGPointMake(0, -FRIENDVIEW_HEIGHT/2);
     }];
+    folded = YES;
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer 
