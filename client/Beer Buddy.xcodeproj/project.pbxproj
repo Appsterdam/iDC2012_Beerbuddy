@@ -10,11 +10,11 @@
 		D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */; };
 		D32C8EA415BAAF10009CD20B /* mrbean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D32C8EA315BAAF10009CD20B /* mrbean.jpg */; };
 		D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */; };
-		D3C3703B15BABF8600A0CB27 /* balloon_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3703715BABF8600A0CB27 /* balloon_frame.png */; };
-		D3C3703C15BABF8600A0CB27 /* balloon_left.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3703815BABF8600A0CB27 /* balloon_left.png */; };
-		D3C3703D15BABF8600A0CB27 /* balloon_right.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3703915BABF8600A0CB27 /* balloon_right.png */; };
-		D3C3703E15BABF8600A0CB27 /* balloon_stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3703A15BABF8600A0CB27 /* balloon_stretch.png */; };
 		D3C3704115BAC3E600A0CB27 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3704015BAC3E600A0CB27 /* Friend.m */; };
+		D3C3704615BAC9F500A0CB27 /* balloon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704215BAC9F500A0CB27 /* balloon-frame.png */; };
+		D3C3704715BAC9F500A0CB27 /* balloon-left.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704315BAC9F500A0CB27 /* balloon-left.png */; };
+		D3C3704815BAC9F500A0CB27 /* balloon-right.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704415BAC9F500A0CB27 /* balloon-right.png */; };
+		D3C3704915BAC9F500A0CB27 /* balloon-stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */; };
 		D3E4656215BA9CBA000D0BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656115BA9CBA000D0BB3 /* UIKit.framework */; };
 		D3E4656415BA9CBA000D0BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656315BA9CBA000D0BB3 /* Foundation.framework */; };
 		D3E4656615BA9CBA000D0BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656515BA9CBA000D0BB3 /* CoreGraphics.framework */; };
@@ -33,12 +33,12 @@
 		D32C8EA315BAAF10009CD20B /* mrbean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrbean.jpg; sourceTree = "<group>"; };
 		D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAnnotationView.h; sourceTree = "<group>"; };
 		D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendAnnotationView.m; sourceTree = "<group>"; };
-		D3C3703715BABF8600A0CB27 /* balloon_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_frame.png; sourceTree = "<group>"; };
-		D3C3703815BABF8600A0CB27 /* balloon_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_left.png; sourceTree = "<group>"; };
-		D3C3703915BABF8600A0CB27 /* balloon_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_right.png; sourceTree = "<group>"; };
-		D3C3703A15BABF8600A0CB27 /* balloon_stretch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_stretch.png; sourceTree = "<group>"; };
 		D3C3703F15BAC3E600A0CB27 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
 		D3C3704015BAC3E600A0CB27 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		D3C3704215BAC9F500A0CB27 /* balloon-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-frame.png"; sourceTree = "<group>"; };
+		D3C3704315BAC9F500A0CB27 /* balloon-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-left.png"; sourceTree = "<group>"; };
+		D3C3704415BAC9F500A0CB27 /* balloon-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-right.png"; sourceTree = "<group>"; };
+		D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-stretch.png"; sourceTree = "<group>"; };
 		D3E4655D15BA9CBA000D0BB3 /* Beer Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E4656115BA9CBA000D0BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3E4656315BA9CBA000D0BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,10 +77,10 @@
 		D3E4655215BA9CBA000D0BB3 = {
 			isa = PBXGroup;
 			children = (
-				D3C3703715BABF8600A0CB27 /* balloon_frame.png */,
-				D3C3703815BABF8600A0CB27 /* balloon_left.png */,
-				D3C3703915BABF8600A0CB27 /* balloon_right.png */,
-				D3C3703A15BABF8600A0CB27 /* balloon_stretch.png */,
+				D3C3704215BAC9F500A0CB27 /* balloon-frame.png */,
+				D3C3704315BAC9F500A0CB27 /* balloon-left.png */,
+				D3C3704415BAC9F500A0CB27 /* balloon-right.png */,
+				D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */,
 				D32C8EA315BAAF10009CD20B /* mrbean.jpg */,
 				D3E4656715BA9CBA000D0BB3 /* Beer Buddy */,
 				D3E4656015BA9CBA000D0BB3 /* Frameworks */,
@@ -194,10 +194,10 @@
 				D3E4657515BA9CBA000D0BB3 /* MainStoryboard.storyboard in Resources */,
 				D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */,
 				D32C8EA415BAAF10009CD20B /* mrbean.jpg in Resources */,
-				D3C3703B15BABF8600A0CB27 /* balloon_frame.png in Resources */,
-				D3C3703C15BABF8600A0CB27 /* balloon_left.png in Resources */,
-				D3C3703D15BABF8600A0CB27 /* balloon_right.png in Resources */,
-				D3C3703E15BABF8600A0CB27 /* balloon_stretch.png in Resources */,
+				D3C3704615BAC9F500A0CB27 /* balloon-frame.png in Resources */,
+				D3C3704715BAC9F500A0CB27 /* balloon-left.png in Resources */,
+				D3C3704815BAC9F500A0CB27 /* balloon-right.png in Resources */,
+				D3C3704915BAC9F500A0CB27 /* balloon-stretch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

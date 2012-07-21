@@ -10,16 +10,18 @@
 
 @implementation FriendAnnotationView
 
+#define FRIENDVIEW_WIDTH 70
+#define FRIENDVIEW_WIDTH_EXPANDED 250
+#define FRIENDVIEW_HEIGHT 70
 - (id)init
 {
     self = [super init];
     [[NSBundle mainBundle] loadNibNamed:@"FriendAnnotationView" owner:self options:nil];
     [self addSubview:view];
     
-    self.centerOffset = CGPointMake(0, -50);
-    self.frame = CGRectMake(0, 0, 100, 100);
+    self.centerOffset = CGPointMake(0, -FRIENDVIEW_WIDTH/2);
+    self.frame = CGRectMake(0, 0, FRIENDVIEW_WIDTH, FRIENDVIEW_HEIGHT);
     view.frame = self.frame;
-    self.backgroundColor = [UIColor greenColor];
 
     [self setEnabled:NO];
     self.userInteractionEnabled = YES;
@@ -44,19 +46,19 @@ bool folded = true;
 - (void) foldout {
     
     [UIView animateWithDuration:0.3 animations:^{
-        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, 200, 100);
-        view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, 200, 100);
+        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, FRIENDVIEW_WIDTH_EXPANDED, FRIENDVIEW_HEIGHT);
+        view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, FRIENDVIEW_WIDTH_EXPANDED, FRIENDVIEW_HEIGHT);
         extraStuff.alpha = 1.0;
-        self.centerOffset = CGPointMake(50, -50);
+        self.centerOffset = CGPointMake((FRIENDVIEW_WIDTH_EXPANDED-FRIENDVIEW_WIDTH)/2, -FRIENDVIEW_HEIGHT/2);
     }];
 }
 
 - (void) foldin {
     [UIView animateWithDuration:0.3 animations:^{
-        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, 100, 100);
-        view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, 100, 100);
+        self.frame = CGRectMake(self.frame.origin.x, self.frame.origin.y, FRIENDVIEW_WIDTH, FRIENDVIEW_HEIGHT);
+        view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, FRIENDVIEW_WIDTH, FRIENDVIEW_HEIGHT);
         extraStuff.alpha = 0.0;
-        self.centerOffset = CGPointMake(0, -50);
+        self.centerOffset = CGPointMake(0, -FRIENDVIEW_HEIGHT/2);
     }];
 }
 
