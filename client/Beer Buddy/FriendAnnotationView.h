@@ -7,9 +7,14 @@
 //
 
 #import <MapKit/MapKit.h>
+#import "Friend.h"
 
-@interface FriendAnnotationView : MKAnnotationView {
+@interface FriendAnnotationView : MKAnnotationView<UIGestureRecognizerDelegate> {
     IBOutlet UIView *view;
+    UITapGestureRecognizer *tapGestureRecognizer;
+    IBOutlet UIView *extraStuff;
+    
+    Friend *friend;
 }
 
 @end
