@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import "Friend.h"
 
 @interface FriendAnnotation : NSObject<MKAnnotation> {
     
 }
 
--(id)initWithCoordinate:(CLLocationCoordinate2D) c;
+-(id)initWithFriend:(Friend*) friend;
 
 @end

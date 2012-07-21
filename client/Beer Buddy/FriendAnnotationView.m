@@ -13,27 +13,37 @@
 #define FRIENDVIEW_WIDTH 70
 #define FRIENDVIEW_WIDTH_EXPANDED 250
 #define FRIENDVIEW_HEIGHT 70
-- (id)init
+
+- (id)initWithFriend:(Friend*)aFriend
 {
     self = [super init];
+    self->friend = aFriend;
+    
     [[NSBundle mainBundle] loadNibNamed:@"FriendAnnotationView" owner:self options:nil];
     [self addSubview:view];
     
+    // Fill information
+    nameLabel.text = friend->name;
+    nearLabel.text = friend->near;
+    
+    
+    // Set frame size
     self.centerOffset = CGPointMake(0, -FRIENDVIEW_WIDTH/2);
     self.frame = CGRectMake(0, 0, FRIENDVIEW_WIDTH, FRIENDVIEW_HEIGHT);
     view.frame = self.frame;
 
+    
+    // Catch taps
     [self setEnabled:NO];
     self.userInteractionEnabled = YES;
     
     tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
     tapGestureRecognizer.delegate = self;
     [self addGestureRecognizer:tapGestureRecognizer];
-
+    folded = true;
     return self;
 }
 
-bool folded = true;
 - (void)handleTap:(id)sender {
     if(folded)
         [self foldout];
@@ -66,16 +76,5 @@ bool folded = true;
        shouldReceiveTouch:(UITouch *)touch {
     return YES;
 }
-
-
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

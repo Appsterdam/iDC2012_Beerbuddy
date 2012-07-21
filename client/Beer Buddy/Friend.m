@@ -9,23 +9,19 @@
 #import "Friend.h"
 
 @implementation Friend
+@synthesize coordinate;
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
+- (id)initWithDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+
+    NSNumber *latitude = [dictionary objectForKey:@"latitude"];
+    NSNumber *longitude = [dictionary objectForKey:@"longitude"];
+    coordinate = CLLocationCoordinate2DMake(latitude.floatValue, longitude.floatValue);
+    name = [dictionary objectForKey:@"name"];
+    near = [dictionary objectForKey:@"near"];
+    
+    
     return self;
 }
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
 
 @end

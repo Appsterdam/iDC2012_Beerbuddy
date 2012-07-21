@@ -13,8 +13,12 @@
     IBOutlet UIView *view;
     UITapGestureRecognizer *tapGestureRecognizer;
     IBOutlet UIView *extraStuff;
-    
+    IBOutlet UILabel *nameLabel;
+    IBOutlet UILabel *nearLabel;
+    bool folded;
     Friend *friend;
 }
+
+- (id)initWithFriend:(Friend*)friend;
 
 @end

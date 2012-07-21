@@ -8,6 +8,11 @@
 
 #import <MapKit/MapKit.h>
 
-@interface Friend : MKAnnotationView
+@interface Friend : NSObject<MKAnnotation> {
+    @public
+    NSString *name;
+    NSString *near;
+}
 
+- (id) initWithDictionary:(NSDictionary*)dictionary;
 @end

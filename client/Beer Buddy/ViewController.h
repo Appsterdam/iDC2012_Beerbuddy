@@ -12,6 +12,7 @@
 @interface ViewController : UIViewController<MKMapViewDelegate, FBSessionDelegate> {
     Facebook *facebook;
     IBOutlet MKMapView *mapview;
+    IBOutlet UIView *activityThrobber;
 }
 
 @end

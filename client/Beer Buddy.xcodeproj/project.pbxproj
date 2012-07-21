@@ -16,6 +16,7 @@
 		D3C3704815BAC9F500A0CB27 /* balloon-right.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704415BAC9F500A0CB27 /* balloon-right.png */; };
 		D3C3704915BAC9F500A0CB27 /* balloon-stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */; };
 		D3C3705815BACCEC00A0CB27 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C3705715BACCEC00A0CB27 /* libfacebook_ios_sdk.a */; };
+		D3C3705E15BAE70F00A0CB27 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3705D15BAE70F00A0CB27 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D3E4656215BA9CBA000D0BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656115BA9CBA000D0BB3 /* UIKit.framework */; };
 		D3E4656415BA9CBA000D0BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656315BA9CBA000D0BB3 /* Foundation.framework */; };
 		D3E4656615BA9CBA000D0BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656515BA9CBA000D0BB3 /* CoreGraphics.framework */; };
@@ -25,7 +26,6 @@
 		D3E4657515BA9CBA000D0BB3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E4657315BA9CBA000D0BB3 /* MainStoryboard.storyboard */; };
 		D3E4657815BA9CBA000D0BB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E4657715BA9CBA000D0BB3 /* ViewController.m */; };
 		D3E4658415BA9E40000D0BB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4658315BA9E40000D0BB3 /* MapKit.framework */; };
-		D3E4658715BA9F48000D0BB3 /* FriendAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E4658615BA9F48000D0BB3 /* FriendAnnotation.m */; };
 		D3E4658915BAA18C000D0BB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4658815BAA18C000D0BB3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +53,8 @@
 		D3C3705515BACCEC00A0CB27 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		D3C3705615BACCEC00A0CB27 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		D3C3705715BACCEC00A0CB27 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		D3C3705C15BAE70F00A0CB27 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D3C3705D15BAE70F00A0CB27 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		D3E4655D15BA9CBA000D0BB3 /* Beer Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E4656115BA9CBA000D0BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3E4656315BA9CBA000D0BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,8 +69,6 @@
 		D3E4657615BA9CBA000D0BB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D3E4657715BA9CBA000D0BB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D3E4658315BA9E40000D0BB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		D3E4658515BA9F48000D0BB3 /* FriendAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAnnotation.h; sourceTree = "<group>"; };
-		D3E4658615BA9F48000D0BB3 /* FriendAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendAnnotation.m; sourceTree = "<group>"; };
 		D3E4658815BAA18C000D0BB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -147,10 +147,10 @@
 		D3E4656715BA9CBA000D0BB3 /* Beer Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				D3C3705C15BAE70F00A0CB27 /* JSONKit.h */,
+				D3C3705D15BAE70F00A0CB27 /* JSONKit.m */,
 				D3E4657015BA9CBA000D0BB3 /* AppDelegate.h */,
 				D3E4657115BA9CBA000D0BB3 /* AppDelegate.m */,
-				D3E4658515BA9F48000D0BB3 /* FriendAnnotation.h */,
-				D3E4658615BA9F48000D0BB3 /* FriendAnnotation.m */,
 				D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */,
 				D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */,
 				D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */,
@@ -247,9 +247,9 @@
 				D3E4656E15BA9CBA000D0BB3 /* main.m in Sources */,
 				D3E4657215BA9CBA000D0BB3 /* AppDelegate.m in Sources */,
 				D3E4657815BA9CBA000D0BB3 /* ViewController.m in Sources */,
-				D3E4658715BA9F48000D0BB3 /* FriendAnnotation.m in Sources */,
 				D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */,
 				D3C3704115BAC3E600A0CB27 /* Friend.m in Sources */,
+				D3C3705E15BAE70F00A0CB27 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

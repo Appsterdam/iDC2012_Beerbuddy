@@ -11,6 +11,8 @@
 #import "FriendAnnotationView.h"
 #import "Facebook.h"
 #import "AppDelegate.h"
+#import "JSONKit.h"
+#import "Friend.h"
 @implementation ViewController
 
 - (void)viewDidLoad
@@ -24,20 +26,17 @@
         && [defaults objectForKey:@"FBExpirationDateKey"]) {
         facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
         facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+        [self loadData:facebook.accessToken];
     }
     
     if(![facebook isSessionValid])
         [facebook authorize:[NSArray arrayWithObject:@"user_about_me"]];
     
     [super viewDidLoad];
-
-    FriendAnnotation *annotation = [[FriendAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(52.366667, 4.9)];
-
-    [mapview addAnnotation:annotation];
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-    return [[FriendAnnotationView alloc] init];
+    return [[FriendAnnotationView alloc] initWithFriend:(Friend*)annotation];
 }
 
 /**
@@ -49,6 +48,33 @@
     [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
     [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
     [defaults synchronize];
+    
+    [self loadData:facebook.accessToken];
+}
+
+- (void) loadData:(NSString*)accessToken {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.0.169/Sites/json.txt?accesstoken=%@",accessToken]];
+        
+        NSString *json = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+        
+        JSONDecoder *jsonDecoder = [JSONDecoder decoder]; 
+        NSArray *friendsDictionaries = [jsonDecoder objectWithUTF8String:(const unsigned char*)json.UTF8String length:json.length];
+        
+        NSMutableArray *friends = [[NSMutableArray alloc] init];
+        
+        for(NSDictionary *friendDictionary in friendsDictionaries) {
+            Friend *friend = [[Friend alloc] initWithDictionary:friendDictionary];
+            [friends addObject:friend];
+        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [mapview addAnnotations:friends];    
+            [UIView animateWithDuration:1 animations:^{
+                activityThrobber.alpha = 0;
+            }];
+        });
+    });
 }
 
 /**
@@ -67,7 +93,6 @@
  */
 - (void)fbDidExtendToken:(NSString*)accessToken
                expiresAt:(NSDate*)expiresAt {
-    NSLog(@"Got token: %@", accessToken);
 }
 
 /**

@@ -7,18 +7,13 @@
 //
 
 #import "FriendAnnotation.h"
+#import "Friend.h"
 
 @implementation FriendAnnotation
 @synthesize coordinate;
 
-- (NSString *)subtitle{
-    return @"Subtitle";
-}
-- (NSString *)title{
-    return @"Title";
-}
--(id)initWithCoordinate:(CLLocationCoordinate2D) c{
-    coordinate=c;
+-(id)initWithFriend:(Friend*)friend {
+    coordinate=friend->coordinate;
     return self;
 }
 
