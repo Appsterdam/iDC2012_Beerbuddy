@@ -21,6 +21,7 @@
     bool folded;
     Friend *friend;
     ViewController *viewController;
+    IBOutlet UIImageView *imageView;
 }
 
 - (id)initWithFriend:(Friend*)friend :(ViewController*)viewController;

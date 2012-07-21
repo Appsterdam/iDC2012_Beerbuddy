@@ -19,7 +19,7 @@
     coordinate = CLLocationCoordinate2DMake(latitude.floatValue, longitude.floatValue);
     name = [dictionary objectForKey:@"name"];
     near = [dictionary objectForKey:@"near"];
-    
+    image_link = [dictionary objectForKey:@"photo"];
     
     return self;
 }

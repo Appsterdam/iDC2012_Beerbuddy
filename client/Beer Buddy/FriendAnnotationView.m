@@ -21,6 +21,13 @@
     self->viewController = aViewController;
     friend->view = self;
     
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:friend->image_link]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            imageView.image = [UIImage imageWithData:data];
+        });
+    });
+    
     [[NSBundle mainBundle] loadNibNamed:@"FriendAnnotationView" owner:self options:nil];
     [self addSubview:view];
     

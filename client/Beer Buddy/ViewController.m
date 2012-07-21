@@ -65,9 +65,13 @@
     [self loadData:facebook.accessToken];
 }
 
+
+
 - (void) loadData:(NSString*)accessToken {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.0.169/Sites/json.txt?accesstoken=%@",accessToken]];
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.0.169/Sites/json.txt?accesstoken=%@&lat=52.373056&lon=4.892222",accessToken]];
+        
         NSLog(@"Access Token: %@", accessToken);
         
         NSString *json = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
