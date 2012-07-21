@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Facebook.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    @public
+    Facebook *facebook;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

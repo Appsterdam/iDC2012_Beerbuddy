@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */; };
+		D32C8EA415BAAF10009CD20B /* mrbean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D32C8EA315BAAF10009CD20B /* mrbean.jpg */; };
+		D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */; };
+		D3C3704115BAC3E600A0CB27 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3704015BAC3E600A0CB27 /* Friend.m */; };
+		D3C3704615BAC9F500A0CB27 /* balloon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704215BAC9F500A0CB27 /* balloon-frame.png */; };
+		D3C3704715BAC9F500A0CB27 /* balloon-left.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704315BAC9F500A0CB27 /* balloon-left.png */; };
+		D3C3704815BAC9F500A0CB27 /* balloon-right.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704415BAC9F500A0CB27 /* balloon-right.png */; };
+		D3C3704915BAC9F500A0CB27 /* balloon-stretch.png in Resources */ = {isa = PBXBuildFile; fileRef = D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */; };
+		D3C3705815BACCEC00A0CB27 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C3705715BACCEC00A0CB27 /* libfacebook_ios_sdk.a */; };
+		D3C3705E15BAE70F00A0CB27 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3705D15BAE70F00A0CB27 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D3C3706115BB0C6300A0CB27 /* Grip.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3706015BB0C6300A0CB27 /* Grip.m */; };
 		D3E4656215BA9CBA000D0BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656115BA9CBA000D0BB3 /* UIKit.framework */; };
 		D3E4656415BA9CBA000D0BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656315BA9CBA000D0BB3 /* Foundation.framework */; };
 		D3E4656615BA9CBA000D0BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656515BA9CBA000D0BB3 /* CoreGraphics.framework */; };
@@ -15,9 +26,38 @@
 		D3E4657215BA9CBA000D0BB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E4657115BA9CBA000D0BB3 /* AppDelegate.m */; };
 		D3E4657515BA9CBA000D0BB3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E4657315BA9CBA000D0BB3 /* MainStoryboard.storyboard */; };
 		D3E4657815BA9CBA000D0BB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E4657715BA9CBA000D0BB3 /* ViewController.m */; };
+		D3E4658415BA9E40000D0BB3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4658315BA9E40000D0BB3 /* MapKit.framework */; };
+		D3E4658915BAA18C000D0BB3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4658815BAA18C000D0BB3 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendAnnotationView.xib; sourceTree = "<group>"; };
+		D32C8EA315BAAF10009CD20B /* mrbean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrbean.jpg; sourceTree = "<group>"; };
+		D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAnnotationView.h; sourceTree = "<group>"; };
+		D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendAnnotationView.m; sourceTree = "<group>"; };
+		D3C3703F15BAC3E600A0CB27 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		D3C3704015BAC3E600A0CB27 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		D3C3704215BAC9F500A0CB27 /* balloon-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-frame.png"; sourceTree = "<group>"; };
+		D3C3704315BAC9F500A0CB27 /* balloon-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-left.png"; sourceTree = "<group>"; };
+		D3C3704415BAC9F500A0CB27 /* balloon-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-right.png"; sourceTree = "<group>"; };
+		D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "balloon-stretch.png"; sourceTree = "<group>"; };
+		D3C3704B15BACCEC00A0CB27 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		D3C3704C15BACCEC00A0CB27 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		D3C3704D15BACCEC00A0CB27 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		D3C3704E15BACCEC00A0CB27 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		D3C3704F15BACCEC00A0CB27 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		D3C3705015BACCEC00A0CB27 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		D3C3705115BACCEC00A0CB27 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		D3C3705215BACCEC00A0CB27 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		D3C3705315BACCEC00A0CB27 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		D3C3705415BACCEC00A0CB27 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		D3C3705515BACCEC00A0CB27 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		D3C3705615BACCEC00A0CB27 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		D3C3705715BACCEC00A0CB27 /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		D3C3705C15BAE70F00A0CB27 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D3C3705D15BAE70F00A0CB27 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		D3C3705F15BB0C6300A0CB27 /* Grip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grip.h; sourceTree = "<group>"; };
+		D3C3706015BB0C6300A0CB27 /* Grip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grip.m; sourceTree = "<group>"; };
 		D3E4655D15BA9CBA000D0BB3 /* Beer Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E4656115BA9CBA000D0BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3E4656315BA9CBA000D0BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -31,6 +71,8 @@
 		D3E4657415BA9CBA000D0BB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D3E4657615BA9CBA000D0BB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D3E4657715BA9CBA000D0BB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D3E4658315BA9E40000D0BB3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D3E4658815BAA18C000D0BB3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,18 +80,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E4658915BAA18C000D0BB3 /* CoreLocation.framework in Frameworks */,
+				D3E4658415BA9E40000D0BB3 /* MapKit.framework in Frameworks */,
 				D3E4656215BA9CBA000D0BB3 /* UIKit.framework in Frameworks */,
 				D3E4656415BA9CBA000D0BB3 /* Foundation.framework in Frameworks */,
 				D3E4656615BA9CBA000D0BB3 /* CoreGraphics.framework in Frameworks */,
+				D3C3705815BACCEC00A0CB27 /* libfacebook_ios_sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3C3704A15BACCEC00A0CB27 /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				D3C3704B15BACCEC00A0CB27 /* Facebook.h */,
+				D3C3704C15BACCEC00A0CB27 /* FBConnect.h */,
+				D3C3704D15BACCEC00A0CB27 /* FBDialog.h */,
+				D3C3704E15BACCEC00A0CB27 /* FBLoginDialog.h */,
+				D3C3704F15BACCEC00A0CB27 /* FBRequest.h */,
+				D3C3705015BACCEC00A0CB27 /* JSON.h */,
+				D3C3705115BACCEC00A0CB27 /* NSObject+SBJSON.h */,
+				D3C3705215BACCEC00A0CB27 /* NSString+SBJSON.h */,
+				D3C3705315BACCEC00A0CB27 /* SBJSON.h */,
+				D3C3705415BACCEC00A0CB27 /* SBJsonBase.h */,
+				D3C3705515BACCEC00A0CB27 /* SBJsonParser.h */,
+				D3C3705615BACCEC00A0CB27 /* SBJsonWriter.h */,
+			);
+			path = "facebook-ios-sdk";
+			sourceTree = "<group>";
+		};
 		D3E4655215BA9CBA000D0BB3 = {
 			isa = PBXGroup;
 			children = (
+				D3C3704A15BACCEC00A0CB27 /* facebook-ios-sdk */,
+				D3C3705715BACCEC00A0CB27 /* libfacebook_ios_sdk.a */,
+				D3C3704215BAC9F500A0CB27 /* balloon-frame.png */,
+				D3C3704315BAC9F500A0CB27 /* balloon-left.png */,
+				D3C3704415BAC9F500A0CB27 /* balloon-right.png */,
+				D3C3704515BAC9F500A0CB27 /* balloon-stretch.png */,
+				D32C8EA315BAAF10009CD20B /* mrbean.jpg */,
 				D3E4656715BA9CBA000D0BB3 /* Beer Buddy */,
 				D3E4656015BA9CBA000D0BB3 /* Frameworks */,
 				D3E4655E15BA9CBA000D0BB3 /* Products */,
@@ -67,6 +138,8 @@
 		D3E4656015BA9CBA000D0BB3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3E4658815BAA18C000D0BB3 /* CoreLocation.framework */,
+				D3E4658315BA9E40000D0BB3 /* MapKit.framework */,
 				D3E4656115BA9CBA000D0BB3 /* UIKit.framework */,
 				D3E4656315BA9CBA000D0BB3 /* Foundation.framework */,
 				D3E4656515BA9CBA000D0BB3 /* CoreGraphics.framework */,
@@ -77,12 +150,21 @@
 		D3E4656715BA9CBA000D0BB3 /* Beer Buddy */ = {
 			isa = PBXGroup;
 			children = (
+				D3C3705C15BAE70F00A0CB27 /* JSONKit.h */,
+				D3C3705D15BAE70F00A0CB27 /* JSONKit.m */,
 				D3E4657015BA9CBA000D0BB3 /* AppDelegate.h */,
 				D3E4657115BA9CBA000D0BB3 /* AppDelegate.m */,
+				D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */,
+				D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */,
+				D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */,
 				D3E4657315BA9CBA000D0BB3 /* MainStoryboard.storyboard */,
+				D3E4656815BA9CBA000D0BB3 /* Supporting Files */,
 				D3E4657615BA9CBA000D0BB3 /* ViewController.h */,
 				D3E4657715BA9CBA000D0BB3 /* ViewController.m */,
-				D3E4656815BA9CBA000D0BB3 /* Supporting Files */,
+				D3C3703F15BAC3E600A0CB27 /* Friend.h */,
+				D3C3704015BAC3E600A0CB27 /* Friend.m */,
+				D3C3705F15BB0C6300A0CB27 /* Grip.h */,
+				D3C3706015BB0C6300A0CB27 /* Grip.m */,
 			);
 			path = "Beer Buddy";
 			sourceTree = "<group>";
@@ -151,6 +233,12 @@
 			files = (
 				D3E4656C15BA9CBA000D0BB3 /* InfoPlist.strings in Resources */,
 				D3E4657515BA9CBA000D0BB3 /* MainStoryboard.storyboard in Resources */,
+				D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */,
+				D32C8EA415BAAF10009CD20B /* mrbean.jpg in Resources */,
+				D3C3704615BAC9F500A0CB27 /* balloon-frame.png in Resources */,
+				D3C3704715BAC9F500A0CB27 /* balloon-left.png in Resources */,
+				D3C3704815BAC9F500A0CB27 /* balloon-right.png in Resources */,
+				D3C3704915BAC9F500A0CB27 /* balloon-stretch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +252,10 @@
 				D3E4656E15BA9CBA000D0BB3 /* main.m in Sources */,
 				D3E4657215BA9CBA000D0BB3 /* AppDelegate.m in Sources */,
 				D3E4657815BA9CBA000D0BB3 /* ViewController.m in Sources */,
+				D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */,
+				D3C3704115BAC3E600A0CB27 /* Friend.m in Sources */,
+				D3C3705E15BAE70F00A0CB27 /* JSONKit.m in Sources */,
+				D3C3706115BB0C6300A0CB27 /* Grip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +332,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beer Buddy/Beer Buddy-Prefix.pch";
 				INFOPLIST_FILE = "Beer Buddy/Beer Buddy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -251,6 +347,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beer Buddy/Beer Buddy-Prefix.pch";
 				INFOPLIST_FILE = "Beer Buddy/Beer Buddy-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +375,7 @@
 				D3E4657D15BA9CBA000D0BB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
