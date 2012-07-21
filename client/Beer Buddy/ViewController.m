@@ -7,28 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "FriendAnnotation.h"
 
-@interface ViewController ()
-
-@end
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-}
+    FriendAnnotation *annotation = [[FriendAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(52.366667, 4.9)];
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    [mapview addAnnotation:annotation];
 }
 
 @end
