@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */; };
+		D32C8EA115BAAE31009CD20B /* balloons_long.png in Resources */ = {isa = PBXBuildFile; fileRef = D32C8E9F15BAAE31009CD20B /* balloons_long.png */; };
+		D32C8EA215BAAE31009CD20B /* balloons_small.png in Resources */ = {isa = PBXBuildFile; fileRef = D32C8EA015BAAE31009CD20B /* balloons_small.png */; };
+		D32C8EA415BAAF10009CD20B /* mrbean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D32C8EA315BAAF10009CD20B /* mrbean.jpg */; };
+		D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */; };
 		D3E4656215BA9CBA000D0BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656115BA9CBA000D0BB3 /* UIKit.framework */; };
 		D3E4656415BA9CBA000D0BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656315BA9CBA000D0BB3 /* Foundation.framework */; };
 		D3E4656615BA9CBA000D0BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656515BA9CBA000D0BB3 /* CoreGraphics.framework */; };
@@ -21,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendAnnotationView.xib; sourceTree = "<group>"; };
+		D32C8E9F15BAAE31009CD20B /* balloons_long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloons_long.png; sourceTree = "<group>"; };
+		D32C8EA015BAAE31009CD20B /* balloons_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloons_small.png; sourceTree = "<group>"; };
+		D32C8EA315BAAF10009CD20B /* mrbean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrbean.jpg; sourceTree = "<group>"; };
+		D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAnnotationView.h; sourceTree = "<group>"; };
+		D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendAnnotationView.m; sourceTree = "<group>"; };
 		D3E4655D15BA9CBA000D0BB3 /* Beer Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E4656115BA9CBA000D0BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3E4656315BA9CBA000D0BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +70,9 @@
 		D3E4655215BA9CBA000D0BB3 = {
 			isa = PBXGroup;
 			children = (
+				D32C8EA315BAAF10009CD20B /* mrbean.jpg */,
+				D32C8E9F15BAAE31009CD20B /* balloons_long.png */,
+				D32C8EA015BAAE31009CD20B /* balloons_small.png */,
 				D3E4656715BA9CBA000D0BB3 /* Beer Buddy */,
 				D3E4656015BA9CBA000D0BB3 /* Frameworks */,
 				D3E4655E15BA9CBA000D0BB3 /* Products */,
@@ -92,6 +106,9 @@
 				D3E4657115BA9CBA000D0BB3 /* AppDelegate.m */,
 				D3E4658515BA9F48000D0BB3 /* FriendAnnotation.h */,
 				D3E4658615BA9F48000D0BB3 /* FriendAnnotation.m */,
+				D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */,
+				D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */,
+				D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */,
 				D3E4657315BA9CBA000D0BB3 /* MainStoryboard.storyboard */,
 				D3E4656815BA9CBA000D0BB3 /* Supporting Files */,
 				D3E4657615BA9CBA000D0BB3 /* ViewController.h */,
@@ -164,6 +181,10 @@
 			files = (
 				D3E4656C15BA9CBA000D0BB3 /* InfoPlist.strings in Resources */,
 				D3E4657515BA9CBA000D0BB3 /* MainStoryboard.storyboard in Resources */,
+				D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */,
+				D32C8EA115BAAE31009CD20B /* balloons_long.png in Resources */,
+				D32C8EA215BAAE31009CD20B /* balloons_small.png in Resources */,
+				D32C8EA415BAAF10009CD20B /* mrbean.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +199,7 @@
 				D3E4657215BA9CBA000D0BB3 /* AppDelegate.m in Sources */,
 				D3E4657815BA9CBA000D0BB3 /* ViewController.m in Sources */,
 				D3E4658715BA9F48000D0BB3 /* FriendAnnotation.m in Sources */,
+				D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

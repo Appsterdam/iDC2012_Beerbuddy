@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "FriendAnnotation.h"
-
+#import "FriendAnnotationView.h"
 
 @implementation ViewController
 
@@ -19,6 +19,10 @@
     FriendAnnotation *annotation = [[FriendAnnotation alloc] initWithCoordinate:CLLocationCoordinate2DMake(52.366667, 4.9)];
 
     [mapview addAnnotation:annotation];
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    return [[FriendAnnotationView alloc] init];
 }
 
 @end
