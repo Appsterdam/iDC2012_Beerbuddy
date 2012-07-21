@@ -7,7 +7,17 @@
 //
 
 #import <MapKit/MapKit.h>
+#import "FriendAnnotationView.h"
 
-@interface Friend : MKAnnotationView
+@class FriendAnnotationView;
 
+@interface Friend : NSObject<MKAnnotation> {
+    @public
+    NSString *name;
+    NSString *near;
+    
+    FriendAnnotationView *view;
+}
+
+- (id) initWithDictionary:(NSDictionary*)dictionary;
 @end

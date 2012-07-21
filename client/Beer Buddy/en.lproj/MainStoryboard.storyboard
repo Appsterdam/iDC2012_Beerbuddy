@@ -18,17 +18,37 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="9fZ-2c-suD">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="vds-1o-60o"/>
+                                    <outletCollection property="gestureRecognizers" destination="TFy-ls-BFY" appends="YES" id="NSE-ne-Lgp"/>
                                 </connections>
                             </mapView>
+                            <view contentMode="scaleToFill" id="YFZ-Q0-Ff5">
+                                <rect key="frame" x="122" y="195" width="77" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="ANS-cA-YUz">
+                                        <rect key="frame" x="20" y="17" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.41999999999999998" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="activityThrobber" destination="YFZ-Q0-Ff5" id="SUm-bd-1c2"/>
                         <outlet property="mapview" destination="9fZ-2c-suD" id="Uw2-oS-Uni"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="TFy-ls-BFY">
+                    <connections>
+                        <action selector="handleMapTap:" destination="2" id="awn-gt-c06"/>
+                        <outlet property="delegate" destination="2" id="hq7-0N-6ml"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
@@ -36,6 +56,7 @@
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="activityThrobber" candidateClass="UIView"/>
                 <relationship kind="outlet" name="mapview" candidateClass="MKMapView"/>
             </relationships>
         </class>
