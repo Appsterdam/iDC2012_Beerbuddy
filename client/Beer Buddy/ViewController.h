@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-
-@interface ViewController : UIViewController<MKMapViewDelegate> {
+#import "Facebook.h"
+@interface ViewController : UIViewController<MKMapViewDelegate, FBSessionDelegate> {
+    Facebook *facebook;
     IBOutlet MKMapView *mapview;
 }
 

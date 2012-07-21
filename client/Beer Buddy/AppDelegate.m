@@ -17,6 +17,10 @@
     // Override point for customization after application launch.
     return YES;
 }
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [facebook handleOpenURL:url];
+}
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
