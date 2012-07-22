@@ -16,13 +16,11 @@
 @class Friend;
 
 
-@interface ViewController : UIViewController<MKMapViewDelegate, FBSessionDelegate> { //,contentViewDelegate
+@interface ViewController : UIViewController<MKMapViewDelegate> { //,contentViewDelegate
     Facebook *facebook;
     IBOutlet MKMapView *mapview;
     IBOutlet UIView *activityThrobber;
     NSMutableArray *friends;
-    
-    
 }
 
 

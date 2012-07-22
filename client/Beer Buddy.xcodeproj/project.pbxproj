@@ -34,7 +34,6 @@
 		D3B3D3A615BC0B80001D01F4 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B3D3A015BC0B80001D01F4 /* DetailsViewController.m */; };
 		D3B3D3A715BC0B80001D01F4 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3A115BC0B80001D01F4 /* DetailsViewController.xib */; };
 		D3B3D3A815BC0B80001D01F4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B3D3A315BC0B80001D01F4 /* TableViewController.m */; };
-		D3B3D3A915BC0B80001D01F4 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3A415BC0B80001D01F4 /* TableViewController.xib */; };
 		D3B3D3AA15BC0B80001D01F4 /* Temp.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3A515BC0B80001D01F4 /* Temp.xib */; };
 		D3B3D3B015BC0BAE001D01F4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3AF15BC0BAE001D01F4 /* Default@2x.png */; };
 		D3B3D3B215BC0BB1001D01F4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3B115BC0BB1001D01F4 /* Default.png */; };
@@ -153,6 +152,7 @@
 		D3D2C54815BC198E00573A38 /* beerbuddybuttonlogin.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C50615BC198D00573A38 /* beerbuddybuttonlogin.png */; };
 		D3D2C54915BC198E00573A38 /* bluebutton@2x copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C50715BC198D00573A38 /* bluebutton@2x copy.png */; };
 		D3D2C54A15BC198E00573A38 /* bluebutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C50815BC198D00573A38 /* bluebutton@2x.png */; };
+		D3D2C54D15BC1D4400573A38 /* FacebookLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3D2C54C15BC1D4400573A38 /* FacebookLoginViewController.m */; };
 		D3E4656215BA9CBA000D0BB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656115BA9CBA000D0BB3 /* UIKit.framework */; };
 		D3E4656415BA9CBA000D0BB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656315BA9CBA000D0BB3 /* Foundation.framework */; };
 		D3E4656615BA9CBA000D0BB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3E4656515BA9CBA000D0BB3 /* CoreGraphics.framework */; };
@@ -196,7 +196,6 @@
 		D3B3D3A115BC0B80001D01F4 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		D3B3D3A215BC0B80001D01F4 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		D3B3D3A315BC0B80001D01F4 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		D3B3D3A415BC0B80001D01F4 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
 		D3B3D3A515BC0B80001D01F4 /* Temp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Temp.xib; sourceTree = "<group>"; };
 		D3B3D3AF15BC0BAE001D01F4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D3B3D3B115BC0BB1001D01F4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -330,6 +329,8 @@
 		D3D2C50615BC198D00573A38 /* beerbuddybuttonlogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddybuttonlogin.png; path = images/beerbuddybuttonlogin.png; sourceTree = "<group>"; };
 		D3D2C50715BC198D00573A38 /* bluebutton@2x copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bluebutton@2x copy.png"; path = "images/bluebutton@2x copy.png"; sourceTree = "<group>"; };
 		D3D2C50815BC198D00573A38 /* bluebutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bluebutton@2x.png"; path = "images/bluebutton@2x.png"; sourceTree = "<group>"; };
+		D3D2C54B15BC1D4400573A38 /* FacebookLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookLoginViewController.h; sourceTree = "<group>"; };
+		D3D2C54C15BC1D4400573A38 /* FacebookLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookLoginViewController.m; sourceTree = "<group>"; };
 		D3E4655D15BA9CBA000D0BB3 /* Beer Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beer Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E4656115BA9CBA000D0BB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D3E4656315BA9CBA000D0BB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -553,34 +554,35 @@
 		D3E4656715BA9CBA000D0BB3 /* Beer Buddy */ = {
 			isa = PBXGroup;
 			children = (
-				D3D2C4C115BC18AF00573A38 /* temp1.xib */,
-				D3D2C4C215BC18AF00573A38 /* temp2.xib */,
-				D3D2C4C315BC18AF00573A38 /* temp3.xib */,
+				D3E4657015BA9CBA000D0BB3 /* AppDelegate.h */,
+				D3E4657115BA9CBA000D0BB3 /* AppDelegate.m */,
 				D3B3D39F15BC0B80001D01F4 /* DetailsViewController.h */,
 				D3B3D3A015BC0B80001D01F4 /* DetailsViewController.m */,
 				D3B3D3A115BC0B80001D01F4 /* DetailsViewController.xib */,
-				D3B3D3A215BC0B80001D01F4 /* TableViewController.h */,
-				D3B3D3A315BC0B80001D01F4 /* TableViewController.m */,
-				D3B3D3A415BC0B80001D01F4 /* TableViewController.xib */,
-				D3B3D3A515BC0B80001D01F4 /* Temp.xib */,
-				D3C3705C15BAE70F00A0CB27 /* JSONKit.h */,
-				D3C3705D15BAE70F00A0CB27 /* JSONKit.m */,
-				D3E4657015BA9CBA000D0BB3 /* AppDelegate.h */,
-				D3E4657115BA9CBA000D0BB3 /* AppDelegate.m */,
+				D3D2C54B15BC1D4400573A38 /* FacebookLoginViewController.h */,
+				D3D2C54C15BC1D4400573A38 /* FacebookLoginViewController.m */,
+				D3C3703F15BAC3E600A0CB27 /* Friend.h */,
+				D3C3704015BAC3E600A0CB27 /* Friend.m */,
 				D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */,
 				D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */,
 				D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */,
-				A9B9C03815BC06850013E02C /* MainStoryboard.storyboard */,
-				D3E4656815BA9CBA000D0BB3 /* Supporting Files */,
-				D3E4657615BA9CBA000D0BB3 /* ViewController.h */,
-				D3E4657715BA9CBA000D0BB3 /* ViewController.m */,
-				D3C3703F15BAC3E600A0CB27 /* Friend.h */,
-				D3C3704015BAC3E600A0CB27 /* Friend.m */,
 				D3C3705F15BB0C6300A0CB27 /* Grip.h */,
 				D3C3706015BB0C6300A0CB27 /* Grip.m */,
+				D3C3705C15BAE70F00A0CB27 /* JSONKit.h */,
+				D3C3705D15BAE70F00A0CB27 /* JSONKit.m */,
+				A9B9C03815BC06850013E02C /* MainStoryboard.storyboard */,
 				A951C3DE15BB25E000D6D4AF /* PreferencesViewController.h */,
 				A951C3DF15BB25E000D6D4AF /* PreferencesViewController.m */,
 				A951C3E015BB25E000D6D4AF /* PreferencesViewController.xib */,
+				D3E4656815BA9CBA000D0BB3 /* Supporting Files */,
+				D3B3D3A215BC0B80001D01F4 /* TableViewController.h */,
+				D3B3D3A315BC0B80001D01F4 /* TableViewController.m */,
+				D3B3D3A515BC0B80001D01F4 /* Temp.xib */,
+				D3D2C4C115BC18AF00573A38 /* temp1.xib */,
+				D3D2C4C215BC18AF00573A38 /* temp2.xib */,
+				D3D2C4C315BC18AF00573A38 /* temp3.xib */,
+				D3E4657615BA9CBA000D0BB3 /* ViewController.h */,
+				D3E4657715BA9CBA000D0BB3 /* ViewController.m */,
 			);
 			path = "Beer Buddy";
 			sourceTree = "<group>";
@@ -671,7 +673,6 @@
 				D3B3D39D15BC0B49001D01F4 /* list.png in Resources */,
 				D3B3D39E15BC0B49001D01F4 /* preferences.png in Resources */,
 				D3B3D3A715BC0B80001D01F4 /* DetailsViewController.xib in Resources */,
-				D3B3D3A915BC0B80001D01F4 /* TableViewController.xib in Resources */,
 				D3B3D3AA15BC0B80001D01F4 /* Temp.xib in Resources */,
 				D3B3D3B015BC0BAE001D01F4 /* Default@2x.png in Resources */,
 				D3B3D3B215BC0BB1001D01F4 /* Default.png in Resources */,
@@ -806,6 +807,7 @@
 				A951C3E115BB25E000D6D4AF /* PreferencesViewController.m in Sources */,
 				D3B3D3A615BC0B80001D01F4 /* DetailsViewController.m in Sources */,
 				D3B3D3A815BC0B80001D01F4 /* TableViewController.m in Sources */,
+				D3D2C54D15BC1D4400573A38 /* FacebookLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

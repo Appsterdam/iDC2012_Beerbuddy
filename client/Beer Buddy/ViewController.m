@@ -19,31 +19,6 @@
 @implementation ViewController
 
 
-
-- (void)viewDidLoad
-{
-    
-    //Grip.contentViewDelegate = self;
-    
-    friends = [[NSMutableArray alloc] init];
-    facebook = [[Facebook alloc] initWithAppId:@"206562152806303" andDelegate:self];
-    AppDelegate *del = [UIApplication sharedApplication].delegate;
-    del->facebook = facebook;
-    
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if ([defaults objectForKey:@"FBAccessTokenKey"] 
-        && [defaults objectForKey:@"FBExpirationDateKey"]) {
-        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
-        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
-        [self loadData:facebook.accessToken];
-    }
-    
-    if(![facebook isSessionValid])
-        [facebook authorize:[NSArray arrayWithObject:@"user_about_me"]];
-    
-    [super viewDidLoad];
-}
-
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
     return [[FriendAnnotationView alloc] initWithFriend:(Friend*)annotation:self];
 }
@@ -55,24 +30,14 @@
         }
     }
 }
+- (void)viewDidLoad
+{
+    friends = [[NSMutableArray alloc] init];
+}   
 
 - (IBAction)handleMapTap:(id)sender {
     [self foldinAllAnnotationsExcept:nil];
 }
-
-/**
- * Called when the user successfully logged in.
- */
-- (void)fbDidLogin {
-    NSLog(@"Access token: %@", facebook.accessToken);
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
-    [defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];
-    [defaults synchronize];
-    
-    [self loadData:facebook.accessToken];
-}
-
 
 
 - (void) loadData:(NSString*)accessToken {

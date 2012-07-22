@@ -96,7 +96,7 @@
 -(IBAction)showTable:(id) sender {
 	NSLog(@"Mostra Info\n");
 	
-    TableViewController *TableView = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
+    TableViewController *TableView = [[TableViewController alloc] init];
     TableView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
     
