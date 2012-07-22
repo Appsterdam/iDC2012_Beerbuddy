@@ -11,15 +11,21 @@
 #import "Facebook.h"
 #import "Friend.h"
 
+//#import "Grip.h"
+
 @class Friend;
 
-@interface ViewController : UIViewController<MKMapViewDelegate, FBSessionDelegate> {
+
+@interface ViewController : UIViewController<MKMapViewDelegate, FBSessionDelegate> { //,contentViewDelegate
     Facebook *facebook;
     IBOutlet MKMapView *mapview;
     IBOutlet UIView *activityThrobber;
     NSMutableArray *friends;
     
+    
 }
+
+
 
 - (void)foldinAllAnnotationsExcept:(Friend*)exceptFriend;
 

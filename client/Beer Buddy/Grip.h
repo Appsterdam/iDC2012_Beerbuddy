@@ -8,9 +8,41 @@
 
 #import <UIKit/UIKit.h>
 
+//@protocol contentViewDelegate;
+
 @interface Grip : UIView {
-    IBOutlet UIView *container;
+    
+    //id <contentViewDelegate> contentDelegate;
+    
+    //IBOutlet UIView *container;
     IBOutlet UIView *cover;
+    
+    IBOutlet UIImageView *TitleImage;
+    
+    IBOutlet UIButton *But_MapList;
+    IBOutlet UIButton *But_Preferences;
+    
+    IBOutlet UIView *gripLabel;
 }
 
+//@property(nonatomic, assign) id <contentViewDelegate> contentDelegate;
+
+@property(nonatomic, retain) IBOutlet UIImageView *TitleImage;
+
+@property(nonatomic, retain) IBOutlet UIButton *But_MapList;
+@property(nonatomic, retain) IBOutlet UIButton *But_Preferences;
+
+@property(nonatomic, retain) IBOutlet UIView *gripLabel;
+
+-(IBAction)showPreferences:(id) sender;
+-(IBAction)showTable:(id) sender;
+
 @end
+
+
+//-------------------------------------------------//
+/*@protocol contentViewDelegate
+    - (void) showPreferences;
+@end*/
+
+

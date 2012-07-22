@@ -5,6 +5,7 @@
 
 @implementation PreferencesViewController
 
+@synthesize switch1, switch2;
 
 #pragma mark ACTION BUTTON
 
@@ -23,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    switch1.onTintColor = [UIColor colorWithRed:16.0 / 255 green:173.0 / 255 blue:172.0 / 255 alpha:1.0];
+    switch2.onTintColor = [UIColor colorWithRed:16.0 / 255 green:173.0 / 255 blue:172.0 / 255 alpha:1.0];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

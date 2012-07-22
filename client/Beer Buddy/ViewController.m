@@ -13,10 +13,18 @@
 #import "AppDelegate.h"
 #import "JSONKit.h"
 #import "Friend.h"
+
+
+
 @implementation ViewController
+
+
 
 - (void)viewDidLoad
 {
+    
+    //Grip.contentViewDelegate = self;
+    
     friends = [[NSMutableArray alloc] init];
     facebook = [[Facebook alloc] initWithAppId:@"206562152806303" andDelegate:self];
     AppDelegate *del = [UIApplication sharedApplication].delegate;
@@ -167,5 +175,6 @@
 - (void)fbSessionInvalidated {
     
 }
+
 
 @end
