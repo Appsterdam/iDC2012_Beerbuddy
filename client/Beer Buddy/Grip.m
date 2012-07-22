@@ -15,7 +15,7 @@
 @implementation Grip
 
 
-@synthesize But_MapList, But_Preferences, gripLabel, TitleImage; //TitleImage
+@synthesize But_MapList, But_Preferences, TitleImage; //TitleImage
 //@synthesize contentDelegate;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -29,11 +29,9 @@
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:container];
     
-    if ([touch view]==gripLabel) {
-        cover.frame = CGRectMake(cover.frame.origin.x, point.y-cover.frame.size.height, cover.frame.size.width, cover.frame.size.height);
-        
-        TitleImage.image = [UIImage imageNamed:@"goingout.png"];
-    }
+    cover.frame = CGRectMake(cover.frame.origin.x, point.y-cover.frame.size.height, cover.frame.size.width, cover.frame.size.height);
+    
+    TitleImage.image = [UIImage imageNamed:@"goingout.png"];
 }
 
 /**
@@ -54,7 +52,7 @@
         duration = 0.3;
     
     [UIView animateWithDuration:duration delay:0 options:UIViewAnimationCurveEaseOut animations:^ {
-        cover.frame = CGRectMake(cover.frame.origin.x, zichtbaar ? 0 : self.frame.size.height - (cover.frame.size.height+24), cover.frame.size.width, cover.frame.size.height);
+        cover.frame = CGRectMake(cover.frame.origin.x, zichtbaar ? 0 : self.frame.size.height - (cover.frame.size.height+50), cover.frame.size.width, cover.frame.size.height);
         
         if (cover.frame.origin.y < -50) {
             self.But_MapList.alpha = 1.0;

@@ -51,13 +51,14 @@
                                         <rect key="frame" x="79" y="313" width="162" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <view opaque="NO" contentMode="scaleToFill" id="o2J-ML-8qp" userLabel="Bar" customClass="Grip">
-                                        <rect key="frame" x="0.0" y="400" width="320" height="60"/>
+                                    <view opaque="NO" contentMode="scaleToFill" id="o2J-ML-8qp" userLabel="Bar">
+                                        <rect key="frame" x="0.0" y="400" width="320" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bar.png" id="100-Ud-Be2" userLabel="bar">
                                                 <rect key="frame" x="0.0" y="25" width="320" height="35"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </imageView>
                                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rf0-Yj-OYE" userLabel="preferences">
                                                 <rect key="frame" x="292" y="33" width="20" height="20"/>
@@ -89,7 +90,7 @@
                                                     <action selector="showTable:" destination="o2J-ML-8qp" eventType="touchUpInside" id="xE9-im-5jD"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" id="mDv-Ab-bU4" userLabel="grip">
+                                            <view contentMode="scaleToFill" id="mDv-Ab-bU4" userLabel="grip" customClass="Grip">
                                                 <rect key="frame" x="79" y="1" width="162" height="83"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
@@ -107,17 +108,16 @@
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <outlet property="But_MapList" destination="bpQ-2Q-lrB" id="vpz-SM-5N4"/>
+                                                    <outlet property="But_Preferences" destination="rf0-Yj-OYE" id="NE8-fz-cJr"/>
+                                                    <outlet property="TitleImage" destination="vrv-C5-5o6" id="8CH-9I-YNi"/>
+                                                    <outlet property="container" destination="3" id="n9T-66-Ll7"/>
+                                                    <outlet property="cover" destination="ptT-g1-hFs" id="nli-fa-7Ju"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="But_MapList" destination="bpQ-2Q-lrB" id="coC-FK-YBP"/>
-                                            <outlet property="But_Preferences" destination="rf0-Yj-OYE" id="nab-Ai-RcQ"/>
-                                            <outlet property="TitleImage" destination="vrv-C5-5o6" id="47G-gX-STE"/>
-                                            <outlet property="container" destination="3" id="Dcu-61-NgV"/>
-                                            <outlet property="cover" destination="ptT-g1-hFs" id="fDi-5r-8es"/>
-                                            <outlet property="gripLabel" destination="mDv-Ab-bU4" id="PfH-7Z-QKa"/>
-                                        </connections>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WPp-cY-MaK">
                                         <rect key="frame" x="73" y="211" width="175" height="37"/>
