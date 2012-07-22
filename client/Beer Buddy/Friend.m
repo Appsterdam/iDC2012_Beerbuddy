@@ -17,9 +17,10 @@
     NSDictionary *location = [dictionary objectForKey:@"location"];
     
     NSNumber *latitude = [location objectForKey:@"lat"];
-    NSNumber *longitude = [dictionary objectForKey:@"lon"];
+    NSNumber *longitude = [location objectForKey:@"lon"];
+    
     coordinate = CLLocationCoordinate2DMake(latitude.floatValue, longitude.floatValue);
-    name = [dictionary objectForKey:@"first_name"];
+    name = [NSString stringWithFormat:@"%@ %@",[dictionary objectForKey:@"first_name"],[dictionary objectForKey:@"last_name"]];
     near = [dictionary objectForKey:@"near"];
     image_link = [dictionary objectForKey:@"photo"];
     

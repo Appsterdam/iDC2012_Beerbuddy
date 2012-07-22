@@ -27,7 +27,7 @@
  */
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:gripLabel];
+    CGPoint point = [touch locationInView:container];
     
     if ([touch view]==gripLabel) {
         cover.frame = CGRectMake(cover.frame.origin.x, point.y-cover.frame.size.height, cover.frame.size.width, cover.frame.size.height);

@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -24,7 +24,7 @@
                                     <outletCollection property="gestureRecognizers" destination="TFy-ls-BFY" appends="YES" id="NSE-ne-Lgp"/>
                                 </connections>
                             </mapView>
-                            <view contentMode="scaleToFill" id="YFZ-Q0-Ff5">
+                            <view contentMode="scaleToFill" id="YFZ-Q0-Ff5" userLabel="Activity Spinner">
                                 <rect key="frame" x="122" y="195" width="77" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <subviews>
@@ -127,6 +127,7 @@ to find you after 5 hours of drinking ;)</string>
                                             <outlet property="But_MapList" destination="bpQ-2Q-lrB" id="coC-FK-YBP"/>
                                             <outlet property="But_Preferences" destination="rf0-Yj-OYE" id="nab-Ai-RcQ"/>
                                             <outlet property="TitleImage" destination="vrv-C5-5o6" id="47G-gX-STE"/>
+                                            <outlet property="container" destination="3" id="Dcu-61-NgV"/>
                                             <outlet property="cover" destination="ptT-g1-hFs" id="fDi-5r-8es"/>
                                             <outlet property="gripLabel" destination="mDv-Ab-bU4" id="PfH-7Z-QKa"/>
                                         </connections>
@@ -169,6 +170,7 @@ to find you after 5 hours of drinking ;)</string>
                 <relationship kind="outlet" name="But_MapList" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="But_Preferences" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="TitleImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="container" candidateClass="UIView"/>
                 <relationship kind="outlet" name="cover" candidateClass="UIView"/>
                 <relationship kind="outlet" name="gripLabel" candidateClass="UIView"/>
             </relationships>

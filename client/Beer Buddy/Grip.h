@@ -14,7 +14,7 @@
     
     //id <contentViewDelegate> contentDelegate;
     
-    //IBOutlet UIView *container;
+    IBOutlet UIView *container;
     IBOutlet UIView *cover;
     
     IBOutlet UIImageView *TitleImage;
