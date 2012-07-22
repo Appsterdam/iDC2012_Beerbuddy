@@ -50,8 +50,14 @@
     const CGPoint previousLocation = [touch previousLocationInView:self];
     const CGFloat inertia = location.y - previousLocation.y;
     bool zichtbaar = inertia >= 0;
+    CGFloat duration = 1.0/fabs(inertia);
     
-    [UIView animateWithDuration:0.4 animations:^{
+    if(duration > 0.7)
+        duration = 0.7;
+    if(duration < 0.3)
+        duration = 0.3;
+    
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationCurveEaseOut animations:^ {
         cover.frame = CGRectMake(cover.frame.origin.x, zichtbaar ? 0 : self.frame.size.height - (cover.frame.size.height+24), cover.frame.size.width, cover.frame.size.height);
         
         if (cover.frame.origin.y < -50) {
@@ -67,7 +73,7 @@
         }
         
         
-    }];
+    } completion:nil];
     
     
 }
