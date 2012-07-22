@@ -33,11 +33,7 @@
         cover.frame = CGRectMake(cover.frame.origin.x, point.y-cover.frame.size.height, cover.frame.size.width, cover.frame.size.height);
         
         TitleImage.image = [UIImage imageNamed:@"goingout.png"];
-
     }
-
-    
-    
 }
 
 /**

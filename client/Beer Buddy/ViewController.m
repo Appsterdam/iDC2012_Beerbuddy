@@ -78,7 +78,7 @@
 - (void) loadData:(NSString*)accessToken {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.0.204:9000/location?access_token=%@&lat=52.373056&lon=4.892222",accessToken]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://beerbuddy.herokuapp.com/login?access_token=%@&lat=52.373056&lon=4.892222",accessToken]];
         
         NSLog(@"Access Token: %@", accessToken);
         
