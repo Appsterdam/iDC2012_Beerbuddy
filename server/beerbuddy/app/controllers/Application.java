@@ -59,13 +59,13 @@ public class Application extends Controller {
 						+ "(SELECT uid2 FROM friend WHERE uid1 = " + user.id
 						+ ")", FbUser.class);
 
-		List<JsonUser> beerBuddies = new ArrayList<JsonUser>();
+		List<User> beerBuddies = new ArrayList<User>();
 		for (int i = 0; i < myFriends.get().size(); i++) {
 			FbUser fbUser = myFriends.get().get(i);
 			User friend = User.findFriend(fbUser.uid);
 			if (friend != null) {
 				if (friend.active == 1) {
-					beerBuddies.add(new JsonUser(friend));
+					beerBuddies.add(friend);
 				}
 				
 				Friend.saveRelationship(user, friend);
@@ -96,11 +96,11 @@ public class Application extends Controller {
 			JPA.em().persist(user);
 			
 			List<Friend> friends = Friend.findAllFriends(user);
-			List<JsonUser> beerBuddies = new ArrayList<JsonUser>();
+			List<User> beerBuddies = new ArrayList<User>();
 			for (Friend friend : friends) {
-				User frienUser = User.findFriend(friend.user_id2);
-				if (friend != null && frienUser.active == 1) {
-					beerBuddies.add(new JsonUser(frienUser));
+				User friendUser = User.findFriend(friend.user_id2);
+				if (friend != null && friendUser.active == 1) {
+					beerBuddies.add(friendUser);
 				}
 			}
 			
@@ -111,20 +111,11 @@ public class Application extends Controller {
 	}
 	
 	private static class JsonFriends {
-		JsonFriends(List<JsonUser> beerBuddies) {
+		JsonFriends(List<User> beerBuddies) {
 			this.beerBuddies = beerBuddies;
 		}
 		
 		@JsonProperty("beer_buddies")
-		public List<JsonUser> beerBuddies;
-	}
-
-	private static class JsonUser {
-		JsonUser(User user) {
-			this.user = user;
-		}
-		
-		@SuppressWarnings("unused")
-		public User user;
+		public List<User> beerBuddies;
 	}
 }
