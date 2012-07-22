@@ -54,7 +54,6 @@
 		D3D2C4A415BC16DC00573A38 /* beerbuddy_0003s_0002s_0001_background-copy-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C47A15BC16DC00573A38 /* beerbuddy_0003s_0002s_0001_background-copy-2.png */; };
 		D3D2C4A515BC16DC00573A38 /* beerbuddy_0004s_0000_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C47B15BC16DC00573A38 /* beerbuddy_0004s_0000_iphone.png */; };
 		D3D2C4A615BC16DC00573A38 /* beerbuddy_0004s_0000s_0000_slide.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C47C15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000_slide.png */; };
-		D3D2C4A715BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0000_I’m-GOING-OUT-!.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C47D15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0000_I’m-GOING-OUT-!.png */; };
 		D3D2C4A815BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0001_top.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C47E15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0001_top.png */; };
 		D3D2C4A915BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0002_bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C47F15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0002_bottom.png */; };
 		D3D2C4AA15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0003_Livello-4.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48015BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0003_Livello-4.png */; };
@@ -68,7 +67,6 @@
 		D3D2C4B215BC16DC00573A38 /* beerbuddy_0005s_0002_submit-button-copy-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48815BC16DC00573A38 /* beerbuddy_0005s_0002_submit-button-copy-25.png */; };
 		D3D2C4B315BC16DC00573A38 /* beerbuddy_0005s_0003_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48915BC16DC00573A38 /* beerbuddy_0005s_0003_iphone.png */; };
 		D3D2C4B415BC16DC00573A38 /* beerbuddy_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48A15BC16DC00573A38 /* beerbuddy_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */; };
-		D3D2C4B515BC16DC00573A38 /* beerbuddy_0005s_0005_We-won’t-post-anything!.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48B15BC16DC00573A38 /* beerbuddy_0005s_0005_We-won’t-post-anything!.png */; };
 		D3D2C4B615BC16DC00573A38 /* beerbuddy_0005s_0008_Rectangle-2-copy-3.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48C15BC16DC00573A38 /* beerbuddy_0005s_0008_Rectangle-2-copy-3.png */; };
 		D3D2C4B715BC16DC00573A38 /* beerbuddy_0005s_0009_Rectangle-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48D15BC16DC00573A38 /* beerbuddy_0005s_0009_Rectangle-2.png */; };
 		D3D2C4B815BC16DC00573A38 /* beerbuddy_0005s_0010_Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C48E15BC16DC00573A38 /* beerbuddy_0005s_0010_Rectangle-1.png */; };
@@ -90,7 +88,6 @@
 		D3D2C51115BC198E00573A38 /* beerbuddy_0000s_0001s_0002s_0001s_0001__Path_.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4CF15BC198A00573A38 /* beerbuddy_0000s_0001s_0002s_0001s_0001__Path_.png */; };
 		D3D2C51215BC198E00573A38 /* beerbuddy_0000s_0002_ARROW-RIGHT.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4D015BC198A00573A38 /* beerbuddy_0000s_0002_ARROW-RIGHT.png */; };
 		D3D2C51315BC198E00573A38 /* beerbuddy_0000s_0003_swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4D115BC198A00573A38 /* beerbuddy_0000s_0003_swipe.png */; };
-		D3D2C51415BC198E00573A38 /* beerbuddy_0000s_0004_I’m-going-home-_(.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4D215BC198A00573A38 /* beerbuddy_0000s_0004_I’m-going-home-_(.png */; };
 		D3D2C51515BC198E00573A38 /* beerbuddy_0000s_0005_Wybren-van-der-Zee.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4D315BC198A00573A38 /* beerbuddy_0000s_0005_Wybren-van-der-Zee.png */; };
 		D3D2C51615BC198E00573A38 /* beerbuddy_0000s_0007_Layer-3-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4D415BC198B00573A38 /* beerbuddy_0000s_0007_Layer-3-copy.png */; };
 		D3D2C51715BC198E00573A38 /* beerbuddy_0000s_0008_Layer-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4D515BC198B00573A38 /* beerbuddy_0000s_0008_Layer-2.png */; };
@@ -126,7 +123,6 @@
 		D3D2C53515BC198E00573A38 /* beerbuddy_0002s_0008_ON.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4F315BC198C00573A38 /* beerbuddy_0002s_0008_ON.png */; };
 		D3D2C53615BC198E00573A38 /* beerbuddy_0002s_0009_gloss.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4F415BC198C00573A38 /* beerbuddy_0002s_0009_gloss.png */; };
 		D3D2C53715BC198E00573A38 /* beerbuddy_0002s_0010_background.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4F515BC198C00573A38 /* beerbuddy_0002s_0010_background.png */; };
-		D3D2C53815BC198E00573A38 /* beerbuddy_0002s_0011_I’m-going-out!.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4F615BC198C00573A38 /* beerbuddy_0002s_0011_I’m-going-out!.png */; };
 		D3D2C53915BC198E00573A38 /* beerbuddy_0002s_0012_Shape-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4F715BC198C00573A38 /* beerbuddy_0002s_0012_Shape-1.png */; };
 		D3D2C53A15BC198E00573A38 /* beerbuddy_0002s_0013_Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4F815BC198C00573A38 /* beerbuddy_0002s_0013_Rectangle-1.png */; };
 		D3D2C53B15BC198E00573A38 /* beerbuddy_0002s_0015_Rectangle-2.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4F915BC198C00573A38 /* beerbuddy_0002s_0015_Rectangle-2.png */; };
@@ -135,7 +131,6 @@
 		D3D2C53E15BC198E00573A38 /* beerbuddy_0003s_0001_submit-button-copy-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4FC15BC198D00573A38 /* beerbuddy_0003s_0001_submit-button-copy-25.png */; };
 		D3D2C53F15BC198E00573A38 /* beerbuddy_0003s_0002_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4FD15BC198D00573A38 /* beerbuddy_0003s_0002_iphone.png */; };
 		D3D2C54015BC198E00573A38 /* beerbuddy_0003s_0003_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4FE15BC198D00573A38 /* beerbuddy_0003s_0003_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */; };
-		D3D2C54115BC198E00573A38 /* beerbuddy_0003s_0004_We-won’t-post-anything!.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4FF15BC198D00573A38 /* beerbuddy_0003s_0004_We-won’t-post-anything!.png */; };
 		D3D2C54215BC198E00573A38 /* beerbuddy_0003s_0005_Going-out...png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C50015BC198D00573A38 /* beerbuddy_0003s_0005_Going-out...png */; };
 		D3D2C54315BC198E00573A38 /* beerbuddy_0003s_0006_Shape-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C50115BC198D00573A38 /* beerbuddy_0003s_0006_Shape-1.png */; };
 		D3D2C54415BC198E00573A38 /* beerbuddy_0003s_0007_Rectangle-1-copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C50215BC198D00573A38 /* beerbuddy_0003s_0007_Rectangle-1-copy.png */; };
@@ -223,7 +218,6 @@
 		D3D2C47A15BC16DC00573A38 /* beerbuddy_0003s_0002s_0001_background-copy-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0003s_0002s_0001_background-copy-2.png"; path = "images/beerbuddy_0003s_0002s_0001_background-copy-2.png"; sourceTree = "<group>"; };
 		D3D2C47B15BC16DC00573A38 /* beerbuddy_0004s_0000_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0004s_0000_iphone.png; path = images/beerbuddy_0004s_0000_iphone.png; sourceTree = "<group>"; };
 		D3D2C47C15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000_slide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0004s_0000s_0000_slide.png; path = images/beerbuddy_0004s_0000s_0000_slide.png; sourceTree = "<group>"; };
-		D3D2C47D15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0000_I’m-GOING-OUT-!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0004s_0000s_0000s_0000_I’m-GOING-OUT-!.png"; path = "images/beerbuddy_0004s_0000s_0000s_0000_I’m-GOING-OUT-!.png"; sourceTree = "<group>"; };
 		D3D2C47E15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0001_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0004s_0000s_0000s_0001_top.png; path = images/beerbuddy_0004s_0000s_0000s_0001_top.png; sourceTree = "<group>"; };
 		D3D2C47F15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0002_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0004s_0000s_0000s_0002_bottom.png; path = images/beerbuddy_0004s_0000s_0000s_0002_bottom.png; sourceTree = "<group>"; };
 		D3D2C48015BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0003_Livello-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0004s_0000s_0000s_0003_Livello-4.png"; path = "images/beerbuddy_0004s_0000s_0000s_0003_Livello-4.png"; sourceTree = "<group>"; };
@@ -237,7 +231,6 @@
 		D3D2C48815BC16DC00573A38 /* beerbuddy_0005s_0002_submit-button-copy-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0005s_0002_submit-button-copy-25.png"; path = "images/beerbuddy_0005s_0002_submit-button-copy-25.png"; sourceTree = "<group>"; };
 		D3D2C48915BC16DC00573A38 /* beerbuddy_0005s_0003_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0005s_0003_iphone.png; path = images/beerbuddy_0005s_0003_iphone.png; sourceTree = "<group>"; };
 		D3D2C48A15BC16DC00573A38 /* beerbuddy_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; path = "images/beerbuddy_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; sourceTree = "<group>"; };
-		D3D2C48B15BC16DC00573A38 /* beerbuddy_0005s_0005_We-won’t-post-anything!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0005s_0005_We-won’t-post-anything!.png"; path = "images/beerbuddy_0005s_0005_We-won’t-post-anything!.png"; sourceTree = "<group>"; };
 		D3D2C48C15BC16DC00573A38 /* beerbuddy_0005s_0008_Rectangle-2-copy-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0005s_0008_Rectangle-2-copy-3.png"; path = "images/beerbuddy_0005s_0008_Rectangle-2-copy-3.png"; sourceTree = "<group>"; };
 		D3D2C48D15BC16DC00573A38 /* beerbuddy_0005s_0009_Rectangle-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0005s_0009_Rectangle-2.png"; path = "images/beerbuddy_0005s_0009_Rectangle-2.png"; sourceTree = "<group>"; };
 		D3D2C48E15BC16DC00573A38 /* beerbuddy_0005s_0010_Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0005s_0010_Rectangle-1.png"; path = "images/beerbuddy_0005s_0010_Rectangle-1.png"; sourceTree = "<group>"; };
@@ -259,7 +252,6 @@
 		D3D2C4CF15BC198A00573A38 /* beerbuddy_0000s_0001s_0002s_0001s_0001__Path_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0000s_0001s_0002s_0001s_0001__Path_.png; path = images/beerbuddy_0000s_0001s_0002s_0001s_0001__Path_.png; sourceTree = "<group>"; };
 		D3D2C4D015BC198A00573A38 /* beerbuddy_0000s_0002_ARROW-RIGHT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0000s_0002_ARROW-RIGHT.png"; path = "images/beerbuddy_0000s_0002_ARROW-RIGHT.png"; sourceTree = "<group>"; };
 		D3D2C4D115BC198A00573A38 /* beerbuddy_0000s_0003_swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0000s_0003_swipe.png; path = images/beerbuddy_0000s_0003_swipe.png; sourceTree = "<group>"; };
-		D3D2C4D215BC198A00573A38 /* beerbuddy_0000s_0004_I’m-going-home-_(.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0000s_0004_I’m-going-home-_(.png"; path = "images/beerbuddy_0000s_0004_I’m-going-home-_(.png"; sourceTree = "<group>"; };
 		D3D2C4D315BC198A00573A38 /* beerbuddy_0000s_0005_Wybren-van-der-Zee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0000s_0005_Wybren-van-der-Zee.png"; path = "images/beerbuddy_0000s_0005_Wybren-van-der-Zee.png"; sourceTree = "<group>"; };
 		D3D2C4D415BC198B00573A38 /* beerbuddy_0000s_0007_Layer-3-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0000s_0007_Layer-3-copy.png"; path = "images/beerbuddy_0000s_0007_Layer-3-copy.png"; sourceTree = "<group>"; };
 		D3D2C4D515BC198B00573A38 /* beerbuddy_0000s_0008_Layer-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0000s_0008_Layer-2.png"; path = "images/beerbuddy_0000s_0008_Layer-2.png"; sourceTree = "<group>"; };
@@ -295,7 +287,6 @@
 		D3D2C4F315BC198C00573A38 /* beerbuddy_0002s_0008_ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0002s_0008_ON.png; path = images/beerbuddy_0002s_0008_ON.png; sourceTree = "<group>"; };
 		D3D2C4F415BC198C00573A38 /* beerbuddy_0002s_0009_gloss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0002s_0009_gloss.png; path = images/beerbuddy_0002s_0009_gloss.png; sourceTree = "<group>"; };
 		D3D2C4F515BC198C00573A38 /* beerbuddy_0002s_0010_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0002s_0010_background.png; path = images/beerbuddy_0002s_0010_background.png; sourceTree = "<group>"; };
-		D3D2C4F615BC198C00573A38 /* beerbuddy_0002s_0011_I’m-going-out!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0002s_0011_I’m-going-out!.png"; path = "images/beerbuddy_0002s_0011_I’m-going-out!.png"; sourceTree = "<group>"; };
 		D3D2C4F715BC198C00573A38 /* beerbuddy_0002s_0012_Shape-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0002s_0012_Shape-1.png"; path = "images/beerbuddy_0002s_0012_Shape-1.png"; sourceTree = "<group>"; };
 		D3D2C4F815BC198C00573A38 /* beerbuddy_0002s_0013_Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0002s_0013_Rectangle-1.png"; path = "images/beerbuddy_0002s_0013_Rectangle-1.png"; sourceTree = "<group>"; };
 		D3D2C4F915BC198C00573A38 /* beerbuddy_0002s_0015_Rectangle-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0002s_0015_Rectangle-2.png"; path = "images/beerbuddy_0002s_0015_Rectangle-2.png"; sourceTree = "<group>"; };
@@ -304,7 +295,6 @@
 		D3D2C4FC15BC198D00573A38 /* beerbuddy_0003s_0001_submit-button-copy-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0003s_0001_submit-button-copy-25.png"; path = "images/beerbuddy_0003s_0001_submit-button-copy-25.png"; sourceTree = "<group>"; };
 		D3D2C4FD15BC198D00573A38 /* beerbuddy_0003s_0002_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0003s_0002_iphone.png; path = images/beerbuddy_0003s_0002_iphone.png; sourceTree = "<group>"; };
 		D3D2C4FE15BC198D00573A38 /* beerbuddy_0003s_0003_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0003s_0003_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; path = "images/beerbuddy_0003s_0003_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; sourceTree = "<group>"; };
-		D3D2C4FF15BC198D00573A38 /* beerbuddy_0003s_0004_We-won’t-post-anything!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0003s_0004_We-won’t-post-anything!.png"; path = "images/beerbuddy_0003s_0004_We-won’t-post-anything!.png"; sourceTree = "<group>"; };
 		D3D2C50015BC198D00573A38 /* beerbuddy_0003s_0005_Going-out...png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0003s_0005_Going-out...png"; path = "images/beerbuddy_0003s_0005_Going-out...png"; sourceTree = "<group>"; };
 		D3D2C50115BC198D00573A38 /* beerbuddy_0003s_0006_Shape-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0003s_0006_Shape-1.png"; path = "images/beerbuddy_0003s_0006_Shape-1.png"; sourceTree = "<group>"; };
 		D3D2C50215BC198D00573A38 /* beerbuddy_0003s_0007_Rectangle-1-copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0003s_0007_Rectangle-1-copy.png"; path = "images/beerbuddy_0003s_0007_Rectangle-1-copy.png"; sourceTree = "<group>"; };
@@ -370,7 +360,6 @@
 				D3D2C4CF15BC198A00573A38 /* beerbuddy_0000s_0001s_0002s_0001s_0001__Path_.png */,
 				D3D2C4D015BC198A00573A38 /* beerbuddy_0000s_0002_ARROW-RIGHT.png */,
 				D3D2C4D115BC198A00573A38 /* beerbuddy_0000s_0003_swipe.png */,
-				D3D2C4D215BC198A00573A38 /* beerbuddy_0000s_0004_I’m-going-home-_(.png */,
 				D3D2C4D315BC198A00573A38 /* beerbuddy_0000s_0005_Wybren-van-der-Zee.png */,
 				D3D2C4D415BC198B00573A38 /* beerbuddy_0000s_0007_Layer-3-copy.png */,
 				D3D2C4D515BC198B00573A38 /* beerbuddy_0000s_0008_Layer-2.png */,
@@ -406,7 +395,6 @@
 				D3D2C4F315BC198C00573A38 /* beerbuddy_0002s_0008_ON.png */,
 				D3D2C4F415BC198C00573A38 /* beerbuddy_0002s_0009_gloss.png */,
 				D3D2C4F515BC198C00573A38 /* beerbuddy_0002s_0010_background.png */,
-				D3D2C4F615BC198C00573A38 /* beerbuddy_0002s_0011_I’m-going-out!.png */,
 				D3D2C4F715BC198C00573A38 /* beerbuddy_0002s_0012_Shape-1.png */,
 				D3D2C4F815BC198C00573A38 /* beerbuddy_0002s_0013_Rectangle-1.png */,
 				D3D2C4F915BC198C00573A38 /* beerbuddy_0002s_0015_Rectangle-2.png */,
@@ -430,7 +418,6 @@
 				D3D2C47915BC16DC00573A38 /* beerbuddy_0003s_0002s_0000_Layer-4.png */,
 				D3D2C47A15BC16DC00573A38 /* beerbuddy_0003s_0002s_0001_background-copy-2.png */,
 				D3D2C4FE15BC198D00573A38 /* beerbuddy_0003s_0003_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */,
-				D3D2C4FF15BC198D00573A38 /* beerbuddy_0003s_0004_We-won’t-post-anything!.png */,
 				D3D2C50015BC198D00573A38 /* beerbuddy_0003s_0005_Going-out...png */,
 				D3D2C50115BC198D00573A38 /* beerbuddy_0003s_0006_Shape-1.png */,
 				D3D2C50215BC198D00573A38 /* beerbuddy_0003s_0007_Rectangle-1-copy.png */,
@@ -439,7 +426,6 @@
 				D3D2C50515BC198D00573A38 /* beerbuddy_0003s_0010_Rectangle-1.png */,
 				D3D2C47B15BC16DC00573A38 /* beerbuddy_0004s_0000_iphone.png */,
 				D3D2C47C15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000_slide.png */,
-				D3D2C47D15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0000_I’m-GOING-OUT-!.png */,
 				D3D2C47E15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0001_top.png */,
 				D3D2C47F15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0002_bottom.png */,
 				D3D2C48015BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0003_Livello-4.png */,
@@ -453,7 +439,6 @@
 				D3D2C48815BC16DC00573A38 /* beerbuddy_0005s_0002_submit-button-copy-25.png */,
 				D3D2C48915BC16DC00573A38 /* beerbuddy_0005s_0003_iphone.png */,
 				D3D2C48A15BC16DC00573A38 /* beerbuddy_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */,
-				D3D2C48B15BC16DC00573A38 /* beerbuddy_0005s_0005_We-won’t-post-anything!.png */,
 				D3D2C48C15BC16DC00573A38 /* beerbuddy_0005s_0008_Rectangle-2-copy-3.png */,
 				D3D2C48D15BC16DC00573A38 /* beerbuddy_0005s_0009_Rectangle-2.png */,
 				D3D2C48E15BC16DC00573A38 /* beerbuddy_0005s_0010_Rectangle-1.png */,
@@ -667,7 +652,6 @@
 				D3D2C4A415BC16DC00573A38 /* beerbuddy_0003s_0002s_0001_background-copy-2.png in Resources */,
 				D3D2C4A515BC16DC00573A38 /* beerbuddy_0004s_0000_iphone.png in Resources */,
 				D3D2C4A615BC16DC00573A38 /* beerbuddy_0004s_0000s_0000_slide.png in Resources */,
-				D3D2C4A715BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0000_I’m-GOING-OUT-!.png in Resources */,
 				D3D2C4A815BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0001_top.png in Resources */,
 				D3D2C4A915BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0002_bottom.png in Resources */,
 				D3D2C4AA15BC16DC00573A38 /* beerbuddy_0004s_0000s_0000s_0003_Livello-4.png in Resources */,
@@ -681,7 +665,6 @@
 				D3D2C4B215BC16DC00573A38 /* beerbuddy_0005s_0002_submit-button-copy-25.png in Resources */,
 				D3D2C4B315BC16DC00573A38 /* beerbuddy_0005s_0003_iphone.png in Resources */,
 				D3D2C4B415BC16DC00573A38 /* beerbuddy_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */,
-				D3D2C4B515BC16DC00573A38 /* beerbuddy_0005s_0005_We-won’t-post-anything!.png in Resources */,
 				D3D2C4B615BC16DC00573A38 /* beerbuddy_0005s_0008_Rectangle-2-copy-3.png in Resources */,
 				D3D2C4B715BC16DC00573A38 /* beerbuddy_0005s_0009_Rectangle-2.png in Resources */,
 				D3D2C4B815BC16DC00573A38 /* beerbuddy_0005s_0010_Rectangle-1.png in Resources */,
@@ -703,7 +686,6 @@
 				D3D2C51115BC198E00573A38 /* beerbuddy_0000s_0001s_0002s_0001s_0001__Path_.png in Resources */,
 				D3D2C51215BC198E00573A38 /* beerbuddy_0000s_0002_ARROW-RIGHT.png in Resources */,
 				D3D2C51315BC198E00573A38 /* beerbuddy_0000s_0003_swipe.png in Resources */,
-				D3D2C51415BC198E00573A38 /* beerbuddy_0000s_0004_I’m-going-home-_(.png in Resources */,
 				D3D2C51515BC198E00573A38 /* beerbuddy_0000s_0005_Wybren-van-der-Zee.png in Resources */,
 				D3D2C51615BC198E00573A38 /* beerbuddy_0000s_0007_Layer-3-copy.png in Resources */,
 				D3D2C51715BC198E00573A38 /* beerbuddy_0000s_0008_Layer-2.png in Resources */,
@@ -739,7 +721,6 @@
 				D3D2C53515BC198E00573A38 /* beerbuddy_0002s_0008_ON.png in Resources */,
 				D3D2C53615BC198E00573A38 /* beerbuddy_0002s_0009_gloss.png in Resources */,
 				D3D2C53715BC198E00573A38 /* beerbuddy_0002s_0010_background.png in Resources */,
-				D3D2C53815BC198E00573A38 /* beerbuddy_0002s_0011_I’m-going-out!.png in Resources */,
 				D3D2C53915BC198E00573A38 /* beerbuddy_0002s_0012_Shape-1.png in Resources */,
 				D3D2C53A15BC198E00573A38 /* beerbuddy_0002s_0013_Rectangle-1.png in Resources */,
 				D3D2C53B15BC198E00573A38 /* beerbuddy_0002s_0015_Rectangle-2.png in Resources */,
@@ -748,7 +729,6 @@
 				D3D2C53E15BC198E00573A38 /* beerbuddy_0003s_0001_submit-button-copy-25.png in Resources */,
 				D3D2C53F15BC198E00573A38 /* beerbuddy_0003s_0002_iphone.png in Resources */,
 				D3D2C54015BC198E00573A38 /* beerbuddy_0003s_0003_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */,
-				D3D2C54115BC198E00573A38 /* beerbuddy_0003s_0004_We-won’t-post-anything!.png in Resources */,
 				D3D2C54215BC198E00573A38 /* beerbuddy_0003s_0005_Going-out...png in Resources */,
 				D3D2C54315BC198E00573A38 /* beerbuddy_0003s_0006_Shape-1.png in Resources */,
 				D3D2C54415BC198E00573A38 /* beerbuddy_0003s_0007_Rectangle-1-copy.png in Resources */,
