@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A951C3E115BB25E000D6D4AF /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A951C3DF15BB25E000D6D4AF /* PreferencesViewController.m */; };
-		A951C3E215BB25E000D6D4AF /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A951C3E015BB25E000D6D4AF /* PreferencesViewController.xib */; };
 		A9B9C03915BC06850013E02C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B9C03815BC06850013E02C /* MainStoryboard.storyboard */; };
 		D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */; };
 		D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */; };
@@ -166,7 +165,6 @@
 /* Begin PBXFileReference section */
 		A951C3DE15BB25E000D6D4AF /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
 		A951C3DF15BB25E000D6D4AF /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
-		A951C3E015BB25E000D6D4AF /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
 		A9B9C03815BC06850013E02C /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendAnnotationView.xib; sourceTree = "<group>"; };
 		D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAnnotationView.h; sourceTree = "<group>"; };
@@ -571,7 +569,6 @@
 				A9B9C03815BC06850013E02C /* MainStoryboard.storyboard */,
 				A951C3DE15BB25E000D6D4AF /* PreferencesViewController.h */,
 				A951C3DF15BB25E000D6D4AF /* PreferencesViewController.m */,
-				A951C3E015BB25E000D6D4AF /* PreferencesViewController.xib */,
 				D3E4656815BA9CBA000D0BB3 /* Supporting Files */,
 				D3B3D3A215BC0B80001D01F4 /* TableViewController.h */,
 				D3B3D3A315BC0B80001D01F4 /* TableViewController.m */,
@@ -648,7 +645,6 @@
 			files = (
 				D3E4656C15BA9CBA000D0BB3 /* InfoPlist.strings in Resources */,
 				D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */,
-				A951C3E215BB25E000D6D4AF /* PreferencesViewController.xib in Resources */,
 				A9B9C03915BC06850013E02C /* MainStoryboard.storyboard in Resources */,
 				D3B3D38C15BC0B49001D01F4 /* arrow.png in Resources */,
 				D3B3D38D15BC0B49001D01F4 /* balloon-frame.png in Resources */,

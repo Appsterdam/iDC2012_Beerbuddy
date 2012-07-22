@@ -10,14 +10,11 @@
 
 @interface PreferencesViewController : UIViewController{
     
-    IBOutlet UISwitch *switch1;
-    IBOutlet UISwitch *switch2;
 }
 
-@property(nonatomic, retain) IBOutlet UISwitch *switch1;
-@property(nonatomic, retain) IBOutlet UISwitch *switch2;
 
-- (IBAction) done:(id)sender;
+
+- (IBAction) close:(id)sender;
 
 
 @end
