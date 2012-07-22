@@ -7,10 +7,7 @@
 //
 
 #import "Grip.h"
-
-
 #import "PreferencesViewController.h"
-#import "TableViewController.h"
 
 @implementation Grip
 
@@ -67,46 +64,8 @@
         }
         
         
-    } completion:nil];
-    
-    
+    } completion:nil];   
 }
 
-#pragma mark -
-#pragma mark -- preferences --
-
--(IBAction)showPreferences:(id) sender {
-	NSLog(@"Mostra Info\n");
-	
-    PreferencesViewController *preferencesView = [[PreferencesViewController alloc] initWithNibName:@"PreferencesViewController" bundle:nil];
-    preferencesView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-    
-    
-    [self.window.rootViewController presentModalViewController:preferencesView animated:YES];
-    
-   // [self presentModalViewController:preferencesView animated:YES];
-    //[preferencesView release];
-}
-
-#pragma mark -
-#pragma mark -- Table --
-
--(IBAction)showTable:(id) sender {
-	NSLog(@"Mostra Info\n");
-	
-    TableViewController *TableView = [[TableViewController alloc] init];
-    TableView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    
-    
-    [self.window.rootViewController presentModalViewController:TableView animated:YES];
-    
-    // [self presentModalViewController:preferencesView animated:YES];
-    //[preferencesView release];
-}
-
-
-- (void)dealloc {
-    //contentDelegate = nil;
-}
 
 @end

@@ -28,15 +28,6 @@
 @property(nonatomic, retain) IBOutlet UIButton *But_MapList;
 @property(nonatomic, retain) IBOutlet UIButton *But_Preferences;
 
--(IBAction)showPreferences:(id) sender;
--(IBAction)showTable:(id) sender;
-
 @end
-
-
-//-------------------------------------------------//
-/*@protocol contentViewDelegate
-    - (void) showPreferences;
-@end*/
 
 

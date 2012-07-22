@@ -50,9 +50,15 @@
     [defaults synchronize];
     
     [self dismissModalViewControllerAnimated:YES];
-    
-    
+}
 
+#import "FriendListTableViewController.h"
+
+- (IBAction) showList:(id)sender {
+    FriendListTableViewController *listView = [self.storyboard instantiateViewControllerWithIdentifier:@"list"];
+    listView = [listView initWithFriends:friends];
+    
+    [self presentModalViewController:listView animated:YES];
 }
 
 - (IBAction)handleMapTap:(id)sender {

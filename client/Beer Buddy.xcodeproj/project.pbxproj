@@ -11,6 +11,7 @@
 		A9B9C03915BC06850013E02C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B9C03815BC06850013E02C /* MainStoryboard.storyboard */; };
 		D32C8E9E15BAAAF7009CD20B /* FriendAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */; };
 		D337C1FD15BAA85700729C7F /* FriendAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */; };
+		D39EBFB215BC2FBB00CA3DF2 /* FriendListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39EBFB115BC2FBB00CA3DF2 /* FriendListTableViewController.m */; };
 		D3B3D38C15BC0B49001D01F4 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D37915BC0B49001D01F4 /* arrow.png */; };
 		D3B3D38D15BC0B49001D01F4 /* balloon-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D37A15BC0B49001D01F4 /* balloon-frame.png */; };
 		D3B3D38E15BC0B49001D01F4 /* balloon-left.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D37B15BC0B49001D01F4 /* balloon-left.png */; };
@@ -30,10 +31,6 @@
 		D3B3D39C15BC0B49001D01F4 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D38915BC0B49001D01F4 /* Icon@2x.png */; };
 		D3B3D39D15BC0B49001D01F4 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D38A15BC0B49001D01F4 /* list.png */; };
 		D3B3D39E15BC0B49001D01F4 /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D38B15BC0B49001D01F4 /* preferences.png */; };
-		D3B3D3A615BC0B80001D01F4 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B3D3A015BC0B80001D01F4 /* DetailsViewController.m */; };
-		D3B3D3A715BC0B80001D01F4 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3A115BC0B80001D01F4 /* DetailsViewController.xib */; };
-		D3B3D3A815BC0B80001D01F4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B3D3A315BC0B80001D01F4 /* TableViewController.m */; };
-		D3B3D3AA15BC0B80001D01F4 /* Temp.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3A515BC0B80001D01F4 /* Temp.xib */; };
 		D3B3D3B015BC0BAE001D01F4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3AF15BC0BAE001D01F4 /* Default@2x.png */; };
 		D3B3D3B215BC0BB1001D01F4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3B3D3B115BC0BB1001D01F4 /* Default.png */; };
 		D3C3704115BAC3E600A0CB27 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3704015BAC3E600A0CB27 /* Friend.m */; };
@@ -82,8 +79,6 @@
 		D3D2C4BD15BC16DC00573A38 /* beerbuddy_0006s_0010_Rectangle-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C49315BC16DC00573A38 /* beerbuddy_0006s_0010_Rectangle-1.png */; };
 		D3D2C4BE15BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C49415BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png */; };
 		D3D2C4BF15BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C49515BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */; };
-		D3D2C4C415BC18AF00573A38 /* temp1.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C115BC18AF00573A38 /* temp1.xib */; };
-		D3D2C4C615BC18AF00573A38 /* temp3.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C315BC18AF00573A38 /* temp3.xib */; };
 		D3D2C50915BC198E00573A38 /* beerbuddy_0000s_0000_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C715BC198A00573A38 /* beerbuddy_0000s_0000_iphone.png */; };
 		D3D2C50A15BC198E00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C815BC198A00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png */; };
 		D3D2C50B15BC198E00573A38 /* beerbuddy_0000s_0001s_0000s_0001__Path_.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C915BC198A00573A38 /* beerbuddy_0000s_0001s_0000s_0001__Path_.png */; };
@@ -169,6 +164,8 @@
 		D32C8E9D15BAAAF7009CD20B /* FriendAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendAnnotationView.xib; sourceTree = "<group>"; };
 		D337C1FB15BAA85700729C7F /* FriendAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendAnnotationView.h; sourceTree = "<group>"; };
 		D337C1FC15BAA85700729C7F /* FriendAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendAnnotationView.m; sourceTree = "<group>"; };
+		D39EBFB015BC2FBB00CA3DF2 /* FriendListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListTableViewController.h; sourceTree = "<group>"; };
+		D39EBFB115BC2FBB00CA3DF2 /* FriendListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListTableViewController.m; sourceTree = "<group>"; };
 		D3B3D37915BC0B49001D01F4 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = images/arrow.png; sourceTree = "<group>"; };
 		D3B3D37A15BC0B49001D01F4 /* balloon-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "balloon-frame.png"; path = "images/balloon-frame.png"; sourceTree = "<group>"; };
 		D3B3D37B15BC0B49001D01F4 /* balloon-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "balloon-left.png"; path = "images/balloon-left.png"; sourceTree = "<group>"; };
@@ -188,12 +185,6 @@
 		D3B3D38915BC0B49001D01F4 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "images/Icon@2x.png"; sourceTree = "<group>"; };
 		D3B3D38A15BC0B49001D01F4 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list.png; path = images/list.png; sourceTree = "<group>"; };
 		D3B3D38B15BC0B49001D01F4 /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = preferences.png; path = images/preferences.png; sourceTree = "<group>"; };
-		D3B3D39F15BC0B80001D01F4 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
-		D3B3D3A015BC0B80001D01F4 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
-		D3B3D3A115BC0B80001D01F4 /* DetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
-		D3B3D3A215BC0B80001D01F4 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		D3B3D3A315BC0B80001D01F4 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		D3B3D3A515BC0B80001D01F4 /* Temp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Temp.xib; sourceTree = "<group>"; };
 		D3B3D3AF15BC0BAE001D01F4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D3B3D3B115BC0BB1001D01F4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		D3C3703F15BAC3E600A0CB27 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
@@ -257,8 +248,6 @@
 		D3D2C49315BC16DC00573A38 /* beerbuddy_0006s_0010_Rectangle-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "beerbuddy_0006s_0010_Rectangle-1.png"; path = "images/beerbuddy_0006s_0010_Rectangle-1.png"; sourceTree = "<group>"; };
 		D3D2C49415BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "going-home_0003s_0000s_0000s_0000_GOING-HOME_.png"; path = "images/going-home_0003s_0000s_0000s_0000_GOING-HOME_.png"; sourceTree = "<group>"; };
 		D3D2C49515BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; path = "images/stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; sourceTree = "<group>"; };
-		D3D2C4C115BC18AF00573A38 /* temp1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = temp1.xib; sourceTree = "<group>"; };
-		D3D2C4C315BC18AF00573A38 /* temp3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = temp3.xib; sourceTree = "<group>"; };
 		D3D2C4C715BC198A00573A38 /* beerbuddy_0000s_0000_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0000s_0000_iphone.png; path = images/beerbuddy_0000s_0000_iphone.png; sourceTree = "<group>"; };
 		D3D2C4C815BC198A00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0000s_0001s_0000s_0000__Path_.png; path = images/beerbuddy_0000s_0001s_0000s_0000__Path_.png; sourceTree = "<group>"; };
 		D3D2C4C915BC198A00573A38 /* beerbuddy_0000s_0001s_0000s_0001__Path_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0000s_0001s_0000s_0001__Path_.png; path = images/beerbuddy_0000s_0001s_0000s_0001__Path_.png; sourceTree = "<group>"; };
@@ -552,9 +541,6 @@
 			children = (
 				D3E4657015BA9CBA000D0BB3 /* AppDelegate.h */,
 				D3E4657115BA9CBA000D0BB3 /* AppDelegate.m */,
-				D3B3D39F15BC0B80001D01F4 /* DetailsViewController.h */,
-				D3B3D3A015BC0B80001D01F4 /* DetailsViewController.m */,
-				D3B3D3A115BC0B80001D01F4 /* DetailsViewController.xib */,
 				D3D2C54B15BC1D4400573A38 /* FacebookLoginViewController.h */,
 				D3D2C54C15BC1D4400573A38 /* FacebookLoginViewController.m */,
 				D3C3703F15BAC3E600A0CB27 /* Friend.h */,
@@ -570,13 +556,10 @@
 				A951C3DE15BB25E000D6D4AF /* PreferencesViewController.h */,
 				A951C3DF15BB25E000D6D4AF /* PreferencesViewController.m */,
 				D3E4656815BA9CBA000D0BB3 /* Supporting Files */,
-				D3B3D3A215BC0B80001D01F4 /* TableViewController.h */,
-				D3B3D3A315BC0B80001D01F4 /* TableViewController.m */,
-				D3B3D3A515BC0B80001D01F4 /* Temp.xib */,
-				D3D2C4C115BC18AF00573A38 /* temp1.xib */,
-				D3D2C4C315BC18AF00573A38 /* temp3.xib */,
 				D3E4657615BA9CBA000D0BB3 /* ViewController.h */,
 				D3E4657715BA9CBA000D0BB3 /* ViewController.m */,
+				D39EBFB015BC2FBB00CA3DF2 /* FriendListTableViewController.h */,
+				D39EBFB115BC2FBB00CA3DF2 /* FriendListTableViewController.m */,
 			);
 			path = "Beer Buddy";
 			sourceTree = "<group>";
@@ -665,8 +648,6 @@
 				D3B3D39C15BC0B49001D01F4 /* Icon@2x.png in Resources */,
 				D3B3D39D15BC0B49001D01F4 /* list.png in Resources */,
 				D3B3D39E15BC0B49001D01F4 /* preferences.png in Resources */,
-				D3B3D3A715BC0B80001D01F4 /* DetailsViewController.xib in Resources */,
-				D3B3D3AA15BC0B80001D01F4 /* Temp.xib in Resources */,
 				D3B3D3B015BC0BAE001D01F4 /* Default@2x.png in Resources */,
 				D3B3D3B215BC0BB1001D01F4 /* Default.png in Resources */,
 				D3D2C49615BC16DC00573A38 /* beerbuddy_0003s_0000_iphone.png in Resources */,
@@ -711,8 +692,6 @@
 				D3D2C4BD15BC16DC00573A38 /* beerbuddy_0006s_0010_Rectangle-1.png in Resources */,
 				D3D2C4BE15BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png in Resources */,
 				D3D2C4BF15BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */,
-				D3D2C4C415BC18AF00573A38 /* temp1.xib in Resources */,
-				D3D2C4C615BC18AF00573A38 /* temp3.xib in Resources */,
 				D3D2C50915BC198E00573A38 /* beerbuddy_0000s_0000_iphone.png in Resources */,
 				D3D2C50A15BC198E00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png in Resources */,
 				D3D2C50B15BC198E00573A38 /* beerbuddy_0000s_0001s_0000s_0001__Path_.png in Resources */,
@@ -797,9 +776,8 @@
 				D3C3705E15BAE70F00A0CB27 /* JSONKit.m in Sources */,
 				D3C3706115BB0C6300A0CB27 /* Grip.m in Sources */,
 				A951C3E115BB25E000D6D4AF /* PreferencesViewController.m in Sources */,
-				D3B3D3A615BC0B80001D01F4 /* DetailsViewController.m in Sources */,
-				D3B3D3A815BC0B80001D01F4 /* TableViewController.m in Sources */,
 				D3D2C54D15BC1D4400573A38 /* FacebookLoginViewController.m in Sources */,
+				D39EBFB215BC2FBB00CA3DF2 /* FriendListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PreferencesViewController : UIViewController{
+@interface PreferencesViewController : UIViewController {
     
 }
 

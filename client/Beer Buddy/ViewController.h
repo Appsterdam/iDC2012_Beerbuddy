@@ -24,7 +24,7 @@
 }
 
 
-
+- (IBAction) showList:(id)sender;
 - (void)foldinAllAnnotationsExcept:(Friend*)exceptFriend;
 
 @end

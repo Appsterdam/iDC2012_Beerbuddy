@@ -11,7 +11,7 @@
 @implementation FriendAnnotationView
 
 #define FRIENDVIEW_WIDTH 70
-#define FRIENDVIEW_WIDTH_EXPANDED 250
+#define FRIENDVIEW_WIDTH_EXPANDED 200
 #define FRIENDVIEW_HEIGHT 70
 
 - (id)initWithFriend:(Friend*)aFriend:(ViewController*)aViewController;
