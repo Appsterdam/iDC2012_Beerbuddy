@@ -84,7 +84,6 @@
 		D3D2C4BE15BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C49415BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png */; };
 		D3D2C4BF15BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C49515BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */; };
 		D3D2C4C415BC18AF00573A38 /* temp1.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C115BC18AF00573A38 /* temp1.xib */; };
-		D3D2C4C515BC18AF00573A38 /* temp2.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C215BC18AF00573A38 /* temp2.xib */; };
 		D3D2C4C615BC18AF00573A38 /* temp3.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C315BC18AF00573A38 /* temp3.xib */; };
 		D3D2C50915BC198E00573A38 /* beerbuddy_0000s_0000_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C715BC198A00573A38 /* beerbuddy_0000s_0000_iphone.png */; };
 		D3D2C50A15BC198E00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D2C4C815BC198A00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png */; };
@@ -261,7 +260,6 @@
 		D3D2C49415BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "going-home_0003s_0000s_0000s_0000_GOING-HOME_.png"; path = "images/going-home_0003s_0000s_0000s_0000_GOING-HOME_.png"; sourceTree = "<group>"; };
 		D3D2C49515BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; path = "images/stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png"; sourceTree = "<group>"; };
 		D3D2C4C115BC18AF00573A38 /* temp1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = temp1.xib; sourceTree = "<group>"; };
-		D3D2C4C215BC18AF00573A38 /* temp2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = temp2.xib; sourceTree = "<group>"; };
 		D3D2C4C315BC18AF00573A38 /* temp3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = temp3.xib; sourceTree = "<group>"; };
 		D3D2C4C715BC198A00573A38 /* beerbuddy_0000s_0000_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0000s_0000_iphone.png; path = images/beerbuddy_0000s_0000_iphone.png; sourceTree = "<group>"; };
 		D3D2C4C815BC198A00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = beerbuddy_0000s_0001s_0000s_0000__Path_.png; path = images/beerbuddy_0000s_0001s_0000s_0000__Path_.png; sourceTree = "<group>"; };
@@ -579,7 +577,6 @@
 				D3B3D3A315BC0B80001D01F4 /* TableViewController.m */,
 				D3B3D3A515BC0B80001D01F4 /* Temp.xib */,
 				D3D2C4C115BC18AF00573A38 /* temp1.xib */,
-				D3D2C4C215BC18AF00573A38 /* temp2.xib */,
 				D3D2C4C315BC18AF00573A38 /* temp3.xib */,
 				D3E4657615BA9CBA000D0BB3 /* ViewController.h */,
 				D3E4657715BA9CBA000D0BB3 /* ViewController.m */,
@@ -719,7 +716,6 @@
 				D3D2C4BE15BC16DC00573A38 /* going-home_0003s_0000s_0000s_0000_GOING-HOME_.png in Resources */,
 				D3D2C4BF15BC16DC00573A38 /* stukjetext_0005s_0004_We-let-you-share-your-location-with-your---facebook-friends,-bu.png in Resources */,
 				D3D2C4C415BC18AF00573A38 /* temp1.xib in Resources */,
-				D3D2C4C515BC18AF00573A38 /* temp2.xib in Resources */,
 				D3D2C4C615BC18AF00573A38 /* temp3.xib in Resources */,
 				D3D2C50915BC198E00573A38 /* beerbuddy_0000s_0000_iphone.png in Resources */,
 				D3D2C50A15BC198E00573A38 /* beerbuddy_0000s_0001s_0000s_0000__Path_.png in Resources */,

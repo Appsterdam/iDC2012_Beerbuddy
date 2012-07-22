@@ -39,36 +39,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beerbuddy.png" id="Gzn-Zk-tPu" userLabel="logo">
-                                        <rect key="frame" x="102" y="9" width="111" height="119"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
-                                        </accessibility>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="beerbuddy_0001s_0019_Rectangle-2.png" id="FOz-ab-MAr">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="arrow.png" id="DIU-Lq-DUk" userLabel="arrow">
-                                        <rect key="frame" x="113" y="305" width="89" height="95"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="beerbuddy_0004s_0000s_0003_BeerBuddies-copy.png" id="EUO-q7-pzt">
+                                        <rect key="frame" x="27" y="7" width="267" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
-                                        </accessibility>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="S2K-MG-ylI">
-                                        <rect key="frame" x="0.0" y="141" width="320" height="143"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="beerbuddy_0004s_0000s_0001_Livello-5.png" id="HW2-xa-qAs">
+                                        <rect key="frame" x="79" y="313" width="162" height="89"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">This way your friends can see you 
-on their map and vice versa. 
-After 5 hours GPS-tracking 
-will automatically be switched off,
-since you’re probably home, 
-and if not you don’t want anyone
-to find you after 5 hours of drinking ;)</string>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    </imageView>
                                     <view opaque="NO" contentMode="scaleToFill" id="o2J-ML-8qp" userLabel="Bar" customClass="Grip">
-                                        <rect key="frame" x="0.0" y="399" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="400" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bar.png" id="100-Ud-Be2" userLabel="bar">
@@ -112,6 +96,7 @@ to find you after 5 hours of drinking ;)</string>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="grip.png" id="IdG-DO-JYI" userLabel="grip image">
                                                         <rect key="frame" x="0.0" y="0.0" width="162" height="83"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="goingout.png" id="vrv-C5-5o6" userLabel="im going">
                                                         <rect key="frame" x="20" y="27" width="122" height="28"/>
@@ -121,8 +106,10 @@ to find you after 5 hours of drinking ;)</string>
                                                         </accessibility>
                                                     </imageView>
                                                 </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="But_MapList" destination="bpQ-2Q-lrB" id="coC-FK-YBP"/>
                                             <outlet property="But_Preferences" destination="rf0-Yj-OYE" id="nab-Ai-RcQ"/>
@@ -132,6 +119,21 @@ to find you after 5 hours of drinking ;)</string>
                                             <outlet property="gripLabel" destination="mDv-Ab-bU4" id="PfH-7Z-QKa"/>
                                         </connections>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WPp-cY-MaK">
+                                        <rect key="frame" x="73" y="211" width="175" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" backgroundImage="beerbuddy_0004s_0000s_0000_slide.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="facebookDisconnect:" destination="2" eventType="touchUpInside" id="ePD-Ko-pbm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.027450980392156862" green="0.48627450980392156" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -209,11 +211,11 @@ to find you after 5 hours of drinking ;)</string>
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.png" width="215" height="231"/>
         <image name="bar.png" width="644" height="88"/>
-        <image name="beerbuddy.png" width="430" height="310"/>
         <image name="beerbuddy_0001s_0012_Rectangle-2-copy.png" width="660" height="92"/>
         <image name="beerbuddy_0001s_0019_Rectangle-2.png" width="656" height="878"/>
+        <image name="beerbuddy_0004s_0000s_0000_slide.png" width="343" height="74"/>
+        <image name="beerbuddy_0004s_0000s_0001_Livello-5.png" width="221" height="190"/>
         <image name="beerbuddy_0004s_0000s_0003_BeerBuddies-copy.png" width="563" height="134"/>
         <image name="beerbuddy_0005s_0000_Login-with-facebook.png" width="272" height="42"/>
         <image name="beerbuddy_0005s_0005_We-won’t-post-anything!.png" width="217" height="29"/>

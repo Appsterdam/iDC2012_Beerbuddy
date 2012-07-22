@@ -33,7 +33,27 @@
 - (void)viewDidLoad
 {
     friends = [[NSMutableArray alloc] init];
+    
+    // The fact that this is view is loaded means that we have access to the access token
+    AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    [self loadData:delegate->facebook.accessToken];
+    
 }   
+
+-(IBAction) facebookDisconnect:(id)sender {
+    AppDelegate *delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    [delegate->facebook logout];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey:@"FBAccessTokenKey"];
+    [defaults removeObjectForKey:@"FBExpirationDateKey"];
+    [defaults synchronize];
+    
+    [self dismissModalViewControllerAnimated:YES];
+    
+    
+
+}
 
 - (IBAction)handleMapTap:(id)sender {
     [self foldinAllAnnotationsExcept:nil];

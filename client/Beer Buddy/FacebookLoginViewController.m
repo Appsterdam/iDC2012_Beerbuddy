@@ -23,11 +23,7 @@
         delegate->facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
         
         [self gotoMainScreen];
-        return;
     }
-    
-    if(![delegate->facebook isSessionValid])
-        [self loginFacebookButton:nil];
 }
 
 - (void) gotoMainScreen {
