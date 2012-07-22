@@ -31,6 +31,8 @@ public class User {
 	@JsonProperty("last_name")
 	public String lastName;
 
+	public String photo;
+	
 	@OneToOne(optional=true, cascade=CascadeType.MERGE)
 	@JoinColumn(name="location_id")
 	public Location location;

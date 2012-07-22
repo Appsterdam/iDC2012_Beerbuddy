@@ -7,6 +7,7 @@ create table User (
   accessToken			varchar(255) not null,
   firstName				varchar(255),
   lastName				varchar(255),
+  photo					varchar(255),
   location_id			bigint,
   active				smallint,
   constraint pk_user primary key (id))

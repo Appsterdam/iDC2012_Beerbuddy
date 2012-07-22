@@ -9,6 +9,7 @@ import com.googlecode.batchfb.Batcher;
 import com.googlecode.batchfb.FacebookBatcher;
 import com.googlecode.batchfb.Later;
 
+import models.FbPicture;
 import models.FbUser;
 import models.Friend;
 import models.Location;
@@ -35,6 +36,7 @@ public class Application extends Controller {
 			// new user: get friends from facebook
 			Later<FbUser> me = batcher.graph("me", FbUser.class);
 			Logger.info(me.get().name);
+			Later<FbPicture> picture = batcher.graph(me.get().id + "/picture", FbPicture.class);
 
 			user = User.findById(me.get().id);
 			if (user == null) {
@@ -46,6 +48,7 @@ public class Application extends Controller {
 			user.accessToken = accessToken;
 			user.firstName = me.get().firstName;
 			user.lastName = me.get().lastName;
+			user.photo = String.format("http://graph.facebook.com/%s/picture", me.get().id);
 			user.location = null;
 			user.active = 1;
 			JPA.em().persist(user);
