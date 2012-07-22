@@ -70,14 +70,19 @@
 - (void) loadData:(NSString*)accessToken {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.0.169/Sites/json.txt?accesstoken=%@&lat=52.373056&lon=4.892222",accessToken]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.0.204:9000/location?access_token=%@&lat=52.373056&lon=4.892222",accessToken]];
         
         NSLog(@"Access Token: %@", accessToken);
         
         NSString *json = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
         
         JSONDecoder *jsonDecoder = [JSONDecoder decoder]; 
-        NSArray *friendsDictionaries = [jsonDecoder objectWithUTF8String:(const unsigned char*)json.UTF8String length:json.length];
+        NSDictionary *rootDictionary = [jsonDecoder objectWithUTF8String:(const unsigned char*)json.UTF8String length:json.length];
+        
+        NSArray *friendsDictionaries = [rootDictionary objectForKey:@"beer_buddies"];
+        
+        
+        
         [mapview removeAnnotations:friends];
         friends = [[NSMutableArray alloc] init];
         

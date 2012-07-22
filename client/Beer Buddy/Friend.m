@@ -14,10 +14,12 @@
 - (id)initWithDictionary:(NSDictionary *)dictionary {
     self = [super init];
 
-    NSNumber *latitude = [dictionary objectForKey:@"latitude"];
-    NSNumber *longitude = [dictionary objectForKey:@"longitude"];
+    NSDictionary *location = [dictionary objectForKey:@"location"];
+    
+    NSNumber *latitude = [location objectForKey:@"lat"];
+    NSNumber *longitude = [dictionary objectForKey:@"lon"];
     coordinate = CLLocationCoordinate2DMake(latitude.floatValue, longitude.floatValue);
-    name = [dictionary objectForKey:@"name"];
+    name = [dictionary objectForKey:@"first_name"];
     near = [dictionary objectForKey:@"near"];
     image_link = [dictionary objectForKey:@"photo"];
     
