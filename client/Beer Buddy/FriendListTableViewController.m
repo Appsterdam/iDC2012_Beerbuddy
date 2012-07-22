@@ -7,18 +7,16 @@
 //
 
 #import "FriendListTableViewController.h"
-
-@interface FriendListTableViewController ()
-
-@end
-
+#import "Friend.h"
 @implementation FriendListTableViewController
 
-NSArray *friends;
-- (id) initWithFriends:(NSArray*)theFriends {
+
+- (void) setFriends:(NSArray*)theFriends {
     friends = theFriends;
-    self = [self init];
-    return self;
+}
+
+- (IBAction) close:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark - Table view data source
@@ -38,7 +36,12 @@ NSArray *friends;
     static NSString *CellIdentifier = @"FriendCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = @"Test";
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    Friend *friend = [friends objectAtIndex:indexPath.row];
+    cell.textLabel.text = friend->name;
+    cell.imageView.image = friend->image;
     
     return cell;
 }

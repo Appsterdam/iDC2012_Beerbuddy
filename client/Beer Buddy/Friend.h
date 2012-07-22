@@ -16,6 +16,7 @@
     NSString *name;
     NSString *near;
     
+    UIImage *image;
     NSString *image_link;
     
     FriendAnnotationView *view;

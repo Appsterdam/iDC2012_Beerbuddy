@@ -56,7 +56,7 @@
 
 - (IBAction) showList:(id)sender {
     FriendListTableViewController *listView = [self.storyboard instantiateViewControllerWithIdentifier:@"list"];
-    listView = [listView initWithFriends:friends];
+    [listView setFriends:friends];
     
     [self presentModalViewController:listView animated:YES];
 }

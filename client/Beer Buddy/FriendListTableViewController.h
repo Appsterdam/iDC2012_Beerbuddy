@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FriendListTableViewController : UITableViewController<UITableViewDelegate, UITableViewDataSource> {
-    
+@interface FriendListTableViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
+    NSArray *friends;
 }
 
-- (id) initWithFriends:(NSArray*)friends;
-
+- (void) setFriends:(NSArray*)friends;
+- (IBAction) close:(id)sender;
 @end
