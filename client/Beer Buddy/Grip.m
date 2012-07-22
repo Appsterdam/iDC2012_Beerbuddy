@@ -8,7 +8,15 @@
 
 #import "Grip.h"
 
+
+#import "PreferencesViewController.h"
+#import "TableViewController.h"
+
 @implementation Grip
+
+
+@synthesize But_MapList, But_Preferences, gripLabel, TitleImage; //TitleImage
+//@synthesize contentDelegate;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 
@@ -19,9 +27,17 @@
  */
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:container];
+    CGPoint point = [touch locationInView:gripLabel];
     
-    cover.frame = CGRectMake(cover.frame.origin.x, point.y-cover.frame.size.height, cover.frame.size.width, cover.frame.size.height);
+    if ([touch view]==gripLabel) {
+        cover.frame = CGRectMake(cover.frame.origin.x, point.y-cover.frame.size.height, cover.frame.size.width, cover.frame.size.height);
+        
+        TitleImage.image = [UIImage imageNamed:@"goingout.png"];
+
+    }
+
+    
+    
 }
 
 /**
@@ -36,8 +52,61 @@
     bool zichtbaar = inertia >= 0;
     
     [UIView animateWithDuration:0.4 animations:^{
-        cover.frame = CGRectMake(cover.frame.origin.x, zichtbaar ? 0 : self.frame.size.height - cover.frame.size.height, cover.frame.size.width, cover.frame.size.height);
+        cover.frame = CGRectMake(cover.frame.origin.x, zichtbaar ? 0 : self.frame.size.height - (cover.frame.size.height+24), cover.frame.size.width, cover.frame.size.height);
+        
+        if (cover.frame.origin.y < -50) {
+            self.But_MapList.alpha = 1.0;
+            self.But_Preferences.alpha = 1.0;
+            
+            TitleImage.image = [UIImage imageNamed:@"goinghome.png"];
+        }else {
+            self.But_MapList.alpha = 0.0;
+            self.But_Preferences.alpha = 0.0;
+            
+            TitleImage.image = [UIImage imageNamed:@"goingout.png"];
+        }
+        
+        
     }];
+    
+    
+}
+
+#pragma mark -
+#pragma mark -- preferences --
+
+-(IBAction)showPreferences:(id) sender {
+	NSLog(@"Mostra Info\n");
+	
+    PreferencesViewController *preferencesView = [[PreferencesViewController alloc] initWithNibName:@"PreferencesViewController" bundle:nil];
+    preferencesView.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    
+    
+    [self.window.rootViewController presentModalViewController:preferencesView animated:YES];
+    
+   // [self presentModalViewController:preferencesView animated:YES];
+    //[preferencesView release];
+}
+
+#pragma mark -
+#pragma mark -- Table --
+
+-(IBAction)showTable:(id) sender {
+	NSLog(@"Mostra Info\n");
+	
+    TableViewController *TableView = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
+    TableView.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    
+    [self.window.rootViewController presentModalViewController:TableView animated:YES];
+    
+    // [self presentModalViewController:preferencesView animated:YES];
+    //[preferencesView release];
+}
+
+
+- (void)dealloc {
+    //contentDelegate = nil;
 }
 
 @end
